@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_LiMnCo3O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.66995700
+_cell_length_b   5.98402984
+_cell_length_c   9.84384777
+_cell_angle_alpha   106.01071672
+_cell_angle_beta   90.00116844
+_cell_angle_gamma   118.27753219
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LiMnCo3O8
+_chemical_formula_sum   'Li2 Mn2 Co6 O16'
+_cell_volume   279.33689444
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.75004300  0.50008800  0.25012000  1
+  Li  Li1  1  0.24995600  0.49991300  0.74987600  1
+  Mn  Mn2  1  0.50001300  0.00000900  0.49997400  1
+  Mn  Mn3  1  0.99998900  0.00000000  0.00002500  1
+  Co  Co4  1  0.25016600  0.00003600  0.74996800  1
+  Co  Co5  1  0.74984100  0.99996400  0.25003400  1
+  Co  Co6  1  0.49998800  0.99998700  0.99997800  1
+  Co  Co7  1  0.00000900  0.00001000  0.50002000  1
+  Co  Co8  1  0.74986900  0.00003700  0.74996700  1
+  Co  Co9  1  0.25012300  0.99996300  0.25003300  1
+  O  O10  1  0.59345300  0.18688700  0.86253200  1
+  O  O11  1  0.09323700  0.18645400  0.36239600  1
+  O  O12  1  0.40655100  0.81312300  0.13745500  1
+  O  O13  1  0.90675700  0.81353100  0.63761700  1
+  O  O14  1  0.65397800  0.80298300  0.38070600  1
+  O  O15  1  0.15384100  0.80254700  0.88067000  1
+  O  O16  1  0.90035800  0.80072800  0.13626200  1
+  O  O17  1  0.40051800  0.80103500  0.63622500  1
+  O  O18  1  0.14901900  0.80296900  0.38070400  1
+  O  O19  1  0.64873000  0.80254500  0.88067500  1
+  O  O20  1  0.85099700  0.19704200  0.61931000  1
+  O  O21  1  0.35126200  0.19744200  0.11931100  1
+  O  O22  1  0.09964000  0.19928400  0.86374500  1
+  O  O23  1  0.59948500  0.19895800  0.36377500  1
+  O  O24  1  0.34602000  0.19703600  0.61931500  1
+  O  O25  1  0.84615600  0.19743000  0.11930700  1

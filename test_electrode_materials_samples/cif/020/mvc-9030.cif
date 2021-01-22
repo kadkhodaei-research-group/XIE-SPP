@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_LaZnCrFeO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.52553800
+_cell_length_b   5.35610000
+_cell_length_c   9.31581909
+_cell_angle_alpha   55.15130346
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LaZnCrFeO6
+_chemical_formula_sum   'La2 Zn2 Cr2 Fe2 O12'
+_cell_volume   226.26094593
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.28375300  0.23701000  0.75223800  1
+  La  La1  1  0.71624700  0.23701000  0.25223800  1
+  Zn  Zn2  1  0.77861200  0.77317700  0.75149900  1
+  Zn  Zn3  1  0.22138800  0.77317700  0.25149900  1
+  Cr  Cr4  1  0.75976500  0.49736800  0.50143900  1
+  Cr  Cr5  1  0.24023500  0.49736800  0.00143900  1
+  Fe  Fe6  1  0.75118800  0.99695900  0.00115100  1
+  Fe  Fe7  1  0.24881200  0.99695900  0.50115100  1
+  O  O8  1  0.26808700  0.39485200  0.24096000  1
+  O  O9  1  0.44852700  0.13763600  0.05909900  1
+  O  O10  1  0.46114300  0.74809000  0.44236400  1
+  O  O11  1  0.53885700  0.74809000  0.94236400  1
+  O  O12  1  0.55147300  0.13763600  0.55909900  1
+  O  O13  1  0.73191300  0.39485200  0.74096000  1
+  O  O14  1  0.78534400  0.66447100  0.25703000  1
+  O  O15  1  0.98716700  0.82674600  0.44056900  1
+  O  O16  1  0.98557800  0.22369000  0.05365100  1
+  O  O17  1  0.01442200  0.22369000  0.55365100  1
+  O  O18  1  0.01283300  0.82674600  0.94056900  1
+  O  O19  1  0.21465600  0.66447100  0.75703000  1

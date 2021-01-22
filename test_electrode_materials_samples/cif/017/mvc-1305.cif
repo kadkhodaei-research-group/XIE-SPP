@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_BaAlFe4O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.03158626
+_cell_length_b   6.03158626
+_cell_length_c   10.34820100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000284
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaAlFe4O7
+_chemical_formula_sum   'Ba2 Al2 Fe8 O14'
+_cell_volume   326.03074866
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.66666700  0.33333300  0.49694200  1
+  Ba  Ba1  1  0.33333300  0.66666700  0.99694200  1
+  Al  Al2  1  0.66666700  0.33333300  0.87900200  1
+  Al  Al3  1  0.33333300  0.66666700  0.37900200  1
+  Fe  Fe4  1  0.80975700  0.19024300  0.18589700  1
+  Fe  Fe5  1  0.61951300  0.80975700  0.68589700  1
+  Fe  Fe6  1  0.19024300  0.38048700  0.68589700  1
+  Fe  Fe7  1  0.80975700  0.61951300  0.18589700  1
+  Fe  Fe8  1  0.38048700  0.19024300  0.18589700  1
+  Fe  Fe9  1  0.19024300  0.80975700  0.68589700  1
+  Fe  Fe10  1  0.00000000  0.00000000  0.42684000  1
+  Fe  Fe11  1  0.00000000  0.00000000  0.92684000  1
+  O  O12  1  0.82645900  0.17354100  0.99388400  1
+  O  O13  1  0.65291800  0.82645900  0.49388400  1
+  O  O14  1  0.17354100  0.34708200  0.49388400  1
+  O  O15  1  0.82645900  0.65291800  0.99388400  1
+  O  O16  1  0.34708200  0.17354100  0.99388400  1
+  O  O17  1  0.17354100  0.82645900  0.49388400  1
+  O  O18  1  0.00000000  0.00000000  0.74320900  1
+  O  O19  1  0.00000000  0.00000000  0.24320900  1
+  O  O20  1  0.48848300  0.51151700  0.28288700  1
+  O  O21  1  0.97696500  0.48848300  0.78288700  1
+  O  O22  1  0.51151700  0.02303500  0.78288700  1
+  O  O23  1  0.48848300  0.97696500  0.28288700  1
+  O  O24  1  0.51151700  0.48848300  0.78288700  1
+  O  O25  1  0.02303500  0.51151700  0.28288700  1

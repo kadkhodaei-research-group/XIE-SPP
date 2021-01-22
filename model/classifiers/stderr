@@ -1,0 +1,6 @@
+train_CAE_binary_clf.py:81: RuntimeWarning: invalid value encountered in true_divide
+  precision = TP / (TP + FP)
+train_CAE_binary_clf.py:81: RuntimeWarning: divide by zero encountered in true_divide
+  precision = TP / (TP + FP)
+train_CAE_binary_clf.py:81: RuntimeWarning: invalid value encountered in true_divide
+  precision = TP / (TP + FP)

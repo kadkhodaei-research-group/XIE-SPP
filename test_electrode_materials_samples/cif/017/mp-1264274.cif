@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Sr2YAlCo2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   11.76011396
+_cell_length_b   11.76011396
+_cell_length_c   11.76011396
+_cell_angle_alpha   152.73570460
+_cell_angle_beta   151.81808685
+_cell_angle_gamma   39.61418094
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr2YAlCo2O7
+_chemical_formula_sum   'Sr4 Y2 Al2 Co4 O14'
+_cell_volume   351.21842424
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.81990600  0.83751000  0.96417100  1
+  Sr  Sr1  1  0.18009400  0.14426400  0.01760400  1
+  Sr  Sr2  1  0.62666100  0.64426400  0.96417100  1
+  Sr  Sr3  1  0.37333900  0.33751000  0.01760400  1
+  Y  Y4  1  0.50000000  0.48252500  0.98252500  1
+  Y  Y5  1  0.00000000  0.98252500  0.98252500  1
+  Al  Al6  1  0.17224700  0.76187200  0.43411800  1
+  Al  Al7  1  0.82775300  0.26187200  0.58962500  1
+  Co  Co8  1  0.92264100  0.39935300  0.48590300  1
+  Co  Co9  1  0.07735900  0.56326200  0.47671200  1
+  Co  Co10  1  0.58655000  0.06326200  0.48590300  1
+  Co  Co11  1  0.41345000  0.89935300  0.47671200  1
+  O  O12  1  0.91061800  0.57828800  0.98890700  1
+  O  O13  1  0.08938200  0.07828800  0.66767000  1
+  O  O14  1  0.71365000  0.68829300  0.53124300  1
+  O  O15  1  0.28635000  0.81759200  0.97464300  1
+  O  O16  1  0.34294900  0.31759200  0.53124300  1
+  O  O17  1  0.65705100  0.18829300  0.97464300  1
+  O  O18  1  0.15009100  0.12876500  0.41660500  1
+  O  O19  1  0.84990900  0.26651400  0.97867400  1
+  O  O20  1  0.78784000  0.76651400  0.41660500  1
+  O  O21  1  0.21216000  0.62876500  0.97867400  1
+  O  O22  1  0.37798500  0.77580500  0.51394500  1
+  O  O23  1  0.62201500  0.13596000  0.39782000  1
+  O  O24  1  0.23814000  0.63596000  0.51394500  1
+  O  O25  1  0.76186000  0.27580500  0.39782000  1

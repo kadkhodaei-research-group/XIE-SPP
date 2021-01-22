@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Sr2YAlNi2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   11.66899648
+_cell_length_b   11.66899648
+_cell_length_c   11.66899648
+_cell_angle_alpha   152.62246385
+_cell_angle_beta   151.97852059
+_cell_angle_gamma   39.57716010
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr2YAlNi2O7
+_chemical_formula_sum   'Sr4 Y2 Al2 Ni4 O14'
+_cell_volume   342.63369512
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.83057400  0.83287500  0.96431300  1
+  Sr  Sr1  1  0.16942600  0.13373900  0.00230100  1
+  Sr  Sr2  1  0.63143800  0.63373900  0.96431300  1
+  Sr  Sr3  1  0.36856200  0.33287500  0.00230100  1
+  Y  Y4  1  0.50000000  0.48280900  0.98280900  1
+  Y  Y5  1  0.00000000  0.98280900  0.98280900  1
+  Al  Al6  1  0.17058900  0.76124300  0.43183200  1
+  Al  Al7  1  0.82941100  0.26124300  0.59065500  1
+  Ni  Ni8  1  0.91661600  0.39577900  0.48098700  1
+  Ni  Ni9  1  0.08338400  0.56437100  0.47916400  1
+  Ni  Ni10  1  0.58520700  0.06437100  0.48098700  1
+  Ni  Ni11  1  0.41479300  0.89577900  0.47916400  1
+  O  O12  1  0.90681900  0.57798200  0.98480100  1
+  O  O13  1  0.09318100  0.07798200  0.67116300  1
+  O  O14  1  0.69587400  0.67500400  0.49865300  1
+  O  O15  1  0.30412600  0.80277900  0.97913000  1
+  O  O16  1  0.32365000  0.30277900  0.49865300  1
+  O  O17  1  0.67635000  0.17500400  0.97913000  1
+  O  O18  1  0.17339100  0.15269200  0.46336000  1
+  O  O19  1  0.82660900  0.28996900  0.97930200  1
+  O  O20  1  0.81066800  0.78996900  0.46336000  1
+  O  O21  1  0.18933200  0.65269200  0.97930200  1
+  O  O22  1  0.37493500  0.77682800  0.50886300  1
+  O  O23  1  0.62506500  0.13392900  0.40189300  1
+  O  O24  1  0.23203500  0.63392900  0.50886300  1
+  O  O25  1  0.76796500  0.27682800  0.40189300  1
