@@ -1,11 +1,11 @@
 # Neural Network Crystal Synthesizability Predictor
 
 ### 1.Abstract
-Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern the crystalline materials synthesis. Yet exploring the exponentially large space of novel crystals for any future application demands an accurate predictive capability for synthesis likelihood to avoid the haphazard trial-and-error. While prevalent benchmarks of synthesizability rely on the energetics of crystal structures, we take an alternative approach to select features of synthesizability from the latent information embedded in existing crystalline materials. We convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by their chemical attributes and use them to train a neural-network convolutional autoencoder (CAE). We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials form the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirmed the validity of our model. The usefulness of the model is illustrated by predicting the synthesizability of hypothetical candidates for battery electrodes and thermoelectric applications.
+Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern the crystalline materials synthesis. Yet exploring the exponentially large space of novel crystals for any future application demands an accurate predictive capability for synthesis likelihood to avoid the haphazard trial-and-error. While prevalent benchmarks of synthesizability rely on the energetics of crystal structures, we take an alternative approach to select features of synthesizability from the latent information embedded in existing crystalline materials. We convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by their chemical attributes and use them for training a neural-network convolutional autoencoder (CAE). We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials from the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirmed our model's validity. The usefulness of the model is illustrated by predicting the synthesizability of hypothetical candidates for battery electrodes and thermoelectric applications.
 
 ### 2. Examples of usage
 *	Evaluating the synthesis likelihood
-Consider a list of files for evaluation, refer to ASE documentation for the list of compatible types
+Consider a list of files for evaluation; refer to ASE documentation for the list of compatible types.
 ```python
 from predict_synthesis import predict_crystal_synthesis
 
@@ -30,7 +30,7 @@ predict_crystal_synthesis(atoms)
 ### 3. Instaling pre-requisits to evaluate synthesizability likelihood
 * Installing conda (if you don't have it)
 
-Follow the instruction on the [conda website](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) or follow according to this tested method on ubuntu 20:
+Follow the instruction on the [conda's website](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) or follow according to this method, tested on an ubuntu-20 machine:
 ```bash
 $ cd ~
 
@@ -42,7 +42,7 @@ $ echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc
 $ source ~/.bashrc
 $ conda update conda
 ```
-Create an envirenment for this package (It's is possible to use other envirnments if you already have one ready)
+Create an envirenment for this package (It's is possible to use other envirnments if you already have one ready) and install all the [minimum requirements](minimum_requirements.txt) to run this model.
 
 ```bash
 $ cd TO/THE/PATH/WHERE/YOU/KEEP/NN-crystal-synthesizability-predictor
@@ -51,7 +51,7 @@ $ conda create -n synthesizability python=3.7
 $ conda activate synthesizability
 $ pip install -r minimum_requirements.txt
 ```
-This install all the packages needed to compute the synthesizability likelihood. These packages are:
+This install all the packages needed to compute the synthesizability likelihood of crystals. These packages are:
 
 ```
 ase==3.17.0
@@ -66,7 +66,7 @@ bokeh==1.2.0
 matplotlib==3.1.3
 h5py==2.10.0
 ```
-If you wish to visualize atoms as you run the test file:
+If you wish to visualize atoms as you in the test file:
 ```bash
 $ conda install nglview -c bioconda
 ```
