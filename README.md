@@ -48,6 +48,21 @@ $ conda create -n synthesizability python=3.7
 $ conda activate synthesizability
 $ pip install -r minimum_requirements.txt
 ```
+This install all the packages needed to compute the synthesizability likelihood. These packages are:
+
+```
+ase==3.17.0
+Keras==2.1.6
+pandas==0.24.2
+seaborn==0.10.0
+scikit-learn==0.23.2
+tensorflow==1.14.0
+jupyter
+jupyterlab
+bokeh==1.2.0
+matplotlib==3.1.3
+h5py==2.10.0
+```
 
 ## 4. Re-training the model from the scratch
 ### 4.1 How to obtain required data bases and packages
