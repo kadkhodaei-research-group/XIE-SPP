@@ -63,6 +63,10 @@ bokeh==1.2.0
 matplotlib==3.1.3
 h5py==2.10.0
 ```
+If you wish to visualize atoms as you run the test file:
+```bash
+$ conda install nglview -c bioconda
+```
 
 ## 4. Re-training the model from the scratch
 ### 4.1 How to obtain required data bases and packages
