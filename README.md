@@ -7,16 +7,47 @@ Predicting the synthesizability of hypothetical crystals has proven to be challe
 *	Evaluating the synthesis likelihood
 Consider a list of files for evaluation, refer to ASE documentation for the list of compatible types
 ```python
-# from predict_synthesis import predict_crystal_synthesis
+from predict_synthesis import predict_crystal_synthesis
 
-crystal_structures = [
+crystal_structures_files = [
 '5910201.cif',
-'POSCAR'
+'1000011.cif'
 ]
-predict_crystal_synthesis(crystal_structures)
+predict_crystal_synthesis(crystal_structures_files)
+
+# Or for other types of input e.g. POSCAR
+
+predict_crystal_synthesis('path/to/POSCAR', format='vasp')
+
+# Or ASE atoms object
+
+predict_crystal_synthesis(atoms)
 ```
 
 ## 3. Instaling pre-requisits to evaluate synthesizability likelihood
+* Installing conda (if you don't have it)
+
+Follow the instruction on the [conda website](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) or follow according to this tested method on ubuntu 20:
+```bash
+$ cd ~
+
+$ wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+$ bash Anaconda3-4.2.0-Linux-x86_64.sh -b -p ~/anaconda
+$ rm Anaconda3-4.2.0-Linux-x86_64.sh
+$ echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc 
+
+$ source ~/.bashrc
+$ conda update conda
+```
+Create an envirenment for this package (It's is possible to use other envirnments if you already have one ready)
+
+```bash
+$ cd TO/THE/PATH/WHERE/YOU/KEEP/NN-crystal-synthesizability-predictor
+
+$ conda create -n synthesizability python=3.7
+$ conda activate synthesizability
+$ pip install -r minimum_requirements.txt
+```
 
 ## 4. Re-training the model from the scratch
 ### 4.1 How to obtain required data bases and packages
