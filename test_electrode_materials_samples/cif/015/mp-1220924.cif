@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_NaPrTi2O6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.48416500
+_cell_length_b   5.51320600
+_cell_length_c   7.75354200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaPrTi2O6
+_chemical_formula_sum   'Na2 Pr2 Ti4 O12'
+_cell_volume   234.43091176
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.49668700  0.76581200  0.50000000  1
+  Na  Na1  1  0.99668700  0.23418800  0.00000000  1
+  Pr  Pr2  1  0.00895500  0.27970800  0.50000000  1
+  Pr  Pr3  1  0.50895500  0.72029200  0.00000000  1
+  Ti  Ti4  1  0.50073700  0.24624900  0.75063900  1
+  Ti  Ti5  1  0.00073700  0.75375100  0.25063900  1
+  Ti  Ti6  1  0.50073700  0.24624900  0.24936100  1
+  Ti  Ti7  1  0.00073700  0.75375100  0.74936100  1
+  O  O8  1  0.27176100  0.52269400  0.71556900  1
+  O  O9  1  0.21794800  0.03181700  0.28688400  1
+  O  O10  1  0.71794800  0.96818300  0.21311600  1
+  O  O11  1  0.77176100  0.47730600  0.78443100  1
+  O  O12  1  0.71794800  0.96818300  0.78688400  1
+  O  O13  1  0.77176100  0.47730600  0.21556900  1
+  O  O14  1  0.27176100  0.52269400  0.28443100  1
+  O  O15  1  0.21794800  0.03181700  0.71311600  1
+  O  O16  1  0.57490800  0.24104200  0.50000000  1
+  O  O17  1  0.93855900  0.73807900  0.50000000  1
+  O  O18  1  0.43855900  0.26192100  0.00000000  1
+  O  O19  1  0.07490800  0.75895800  0.00000000  1

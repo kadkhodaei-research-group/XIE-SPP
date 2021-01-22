@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_KTiPCO7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.41377600
+_cell_length_b   5.63453800
+_cell_length_c   9.85624559
+_cell_angle_alpha   88.72022284
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   KTiPCO7
+_chemical_formula_sum   'K2 Ti2 P2 C2 O14'
+_cell_volume   356.10270339
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.56850200  0.75008100  0.77084200  1
+  K  K1  1  0.06850200  0.24991900  0.22915800  1
+  Ti  Ti2  1  0.22369400  0.22786000  0.65347100  1
+  Ti  Ti3  1  0.72369400  0.77214000  0.34652900  1
+  P  P4  1  0.72999900  0.26351600  0.54908900  1
+  P  P5  1  0.22999900  0.73648400  0.45091100  1
+  C  C6  1  0.26406600  0.28166000  0.89727000  1
+  C  C7  1  0.76406600  0.71834000  0.10273000  1
+  O  O8  1  0.79597100  0.69419900  0.98130100  1
+  O  O9  1  0.25059300  0.07323300  0.83366000  1
+  O  O10  1  0.24114800  0.45729400  0.80441600  1
+  O  O11  1  0.92403100  0.22704100  0.64119900  1
+  O  O12  1  0.53918600  0.22743200  0.64168600  1
+  O  O13  1  0.23412100  0.91965400  0.56491300  1
+  O  O14  1  0.73083700  0.51794200  0.48629700  1
+  O  O15  1  0.23083700  0.48205800  0.51370300  1
+  O  O16  1  0.73412100  0.08034600  0.43508700  1
+  O  O17  1  0.03918600  0.77256800  0.35831400  1
+  O  O18  1  0.42403100  0.77295900  0.35880100  1
+  O  O19  1  0.74114800  0.54270600  0.19558400  1
+  O  O20  1  0.75059300  0.92676700  0.16634000  1
+  O  O21  1  0.29597100  0.30580100  0.01869900  1

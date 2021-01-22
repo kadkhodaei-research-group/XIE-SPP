@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Na2FeBAsO7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.18472735
+_cell_length_b   6.86082500
+_cell_length_c   5.39865850
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   87.78905739
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na2FeBAsO7
+_chemical_formula_sum   'Na4 Fe2 B2 As2 O14'
+_cell_volume   339.94217041
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.22041600  0.99657300  0.23609400  1
+  Na  Na1  1  0.22041600  0.50342700  0.23609400  1
+  Na  Na2  1  0.77958400  0.49657300  0.76390600  1
+  Na  Na3  1  0.77958400  0.00342700  0.76390600  1
+  Fe  Fe4  1  0.34411700  0.75000000  0.78219100  1
+  Fe  Fe5  1  0.65588300  0.25000000  0.21780900  1
+  B  B6  1  0.07924300  0.75000000  0.72580700  1
+  B  B7  1  0.92075700  0.25000000  0.27419300  1
+  As  As8  1  0.42567700  0.25000000  0.72387900  1
+  As  As9  1  0.57432300  0.75000000  0.27612100  1
+  O  O10  1  0.06476800  0.25000000  0.30360100  1
+  O  O11  1  0.13991300  0.75000000  0.95588600  1
+  O  O12  1  0.18486900  0.75000000  0.53500000  1
+  O  O13  1  0.32281900  0.04923500  0.79871200  1
+  O  O14  1  0.32281900  0.45076500  0.79871200  1
+  O  O15  1  0.41104500  0.75000000  0.12908700  1
+  O  O16  1  0.46770000  0.25000000  0.40616800  1
+  O  O17  1  0.53230000  0.75000000  0.59383200  1
+  O  O18  1  0.58895500  0.25000000  0.87091300  1
+  O  O19  1  0.67718100  0.54923500  0.20128800  1
+  O  O20  1  0.67718100  0.95076500  0.20128800  1
+  O  O21  1  0.81513100  0.25000000  0.46500000  1
+  O  O22  1  0.86008700  0.25000000  0.04411400  1
+  O  O23  1  0.93523200  0.75000000  0.69639900  1

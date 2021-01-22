@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Li2Fe3Co5O16
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   2.93608600
+_cell_length_b   5.23035900
+_cell_length_c   19.27142250
+_cell_angle_alpha   86.50324434
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2Fe3Co5O16
+_chemical_formula_sum   'Li2 Fe3 Co5 O16'
+_cell_volume   295.39609115
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.00000000  0.25128500  0.74728900  1
+  Li  Li1  1  0.00000000  0.74871500  0.25271100  1
+  Fe  Fe2  1  0.00000000  0.86853100  0.87342300  1
+  Fe  Fe3  1  0.50000000  0.00000000  0.00000000  1
+  Fe  Fe4  1  0.00000000  0.13146900  0.12657700  1
+  Co  Co5  1  0.50000000  0.24997100  0.25112400  1
+  Co  Co6  1  0.00000000  0.37299600  0.37665800  1
+  Co  Co7  1  0.50000000  0.50000000  0.50000000  1
+  Co  Co8  1  0.00000000  0.62700400  0.62334200  1
+  Co  Co9  1  0.50000000  0.75002900  0.74887600  1
+  O  O10  1  0.50000000  0.26201500  0.06504500  1
+  O  O11  1  0.00000000  0.39772800  0.19885800  1
+  O  O12  1  0.00000000  0.36797600  0.55462200  1
+  O  O13  1  0.00000000  0.60227200  0.80114200  1
+  O  O14  1  0.50000000  0.51529300  0.31194800  1
+  O  O15  1  0.50000000  0.48470700  0.68805200  1
+  O  O16  1  0.50000000  0.73798500  0.93495500  1
+  O  O17  1  0.00000000  0.63202400  0.44537800  1
+  O  O18  1  0.00000000  0.85424600  0.05610900  1
+  O  O19  1  0.50000000  0.75346600  0.56472200  1
+  O  O20  1  0.50000000  0.02153100  0.80848900  1
+  O  O21  1  0.50000000  0.97846900  0.19151100  1
+  O  O22  1  0.00000000  0.89180000  0.69566800  1
+  O  O23  1  0.00000000  0.14575400  0.94389100  1
+  O  O24  1  0.00000000  0.10820000  0.30433200  1
+  O  O25  1  0.50000000  0.24653400  0.43527800  1

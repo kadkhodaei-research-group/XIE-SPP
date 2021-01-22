@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_PrMgTi2O6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.36331200
+_cell_length_b   5.53080300
+_cell_length_c   7.70070700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PrMgTi2O6
+_chemical_formula_sum   'Pr2 Mg2 Ti4 O12'
+_cell_volume   228.42932221
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.01029900  0.70248500  0.00000000  1
+  Pr  Pr1  1  0.51029900  0.29751500  0.50000000  1
+  Mg  Mg2  1  0.48207900  0.20380200  0.00000000  1
+  Mg  Mg3  1  0.98207900  0.79619800  0.50000000  1
+  Ti  Ti4  1  0.00068200  0.24448400  0.75066600  1
+  Ti  Ti5  1  0.00068200  0.24448400  0.24933400  1
+  Ti  Ti6  1  0.50068200  0.75551600  0.25066600  1
+  Ti  Ti7  1  0.50068200  0.75551600  0.74933400  1
+  O  O8  1  0.07997000  0.20774000  0.50000000  1
+  O  O9  1  0.21640700  0.96892400  0.80169200  1
+  O  O10  1  0.21640700  0.96892400  0.19830800  1
+  O  O11  1  0.31055600  0.44500400  0.19186000  1
+  O  O12  1  0.31055600  0.44500400  0.80814000  1
+  O  O13  1  0.37252300  0.72727600  0.50000000  1
+  O  O14  1  0.57997000  0.79226000  0.00000000  1
+  O  O15  1  0.71640700  0.03107600  0.69830800  1
+  O  O16  1  0.71640700  0.03107600  0.30169200  1
+  O  O17  1  0.81055600  0.55499600  0.69186000  1
+  O  O18  1  0.81055600  0.55499600  0.30814000  1
+  O  O19  1  0.87252300  0.27272400  0.00000000  1

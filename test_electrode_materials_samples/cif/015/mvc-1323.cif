@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_BaYFe4O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.54533442
+_cell_length_b   6.54533442
+_cell_length_c   10.50633800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000420
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaYFe4O7
+_chemical_formula_sum   'Ba2 Y2 Fe8 O14'
+_cell_volume   389.80343579
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.66666700  0.33333300  0.48402500  1
+  Ba  Ba1  1  0.33333300  0.66666700  0.98402500  1
+  Y  Y2  1  0.66666700  0.33333300  0.87802400  1
+  Y  Y3  1  0.33333300  0.66666700  0.37802400  1
+  Fe  Fe4  1  0.82846300  0.17153700  0.19487400  1
+  Fe  Fe5  1  0.65692500  0.82846300  0.69487400  1
+  Fe  Fe6  1  0.17153700  0.34307500  0.69487400  1
+  Fe  Fe7  1  0.82846300  0.65692500  0.19487400  1
+  Fe  Fe8  1  0.34307500  0.17153700  0.19487400  1
+  Fe  Fe9  1  0.17153700  0.82846300  0.69487400  1
+  Fe  Fe10  1  0.00000000  0.00000000  0.44596000  1
+  Fe  Fe11  1  0.00000000  0.00000000  0.94596000  1
+  O  O12  1  0.83835900  0.16164100  0.99976300  1
+  O  O13  1  0.67671700  0.83835900  0.49976300  1
+  O  O14  1  0.16164100  0.32328300  0.49976300  1
+  O  O15  1  0.83835900  0.67671700  0.99976300  1
+  O  O16  1  0.32328300  0.16164100  0.99976300  1
+  O  O17  1  0.16164100  0.83835900  0.49976300  1
+  O  O18  1  0.00000000  0.00000000  0.76149100  1
+  O  O19  1  0.00000000  0.00000000  0.26149100  1
+  O  O20  1  0.49952400  0.50047600  0.26019500  1
+  O  O21  1  0.99904900  0.49952400  0.76019500  1
+  O  O22  1  0.50047600  0.00095100  0.76019500  1
+  O  O23  1  0.49952400  0.99904900  0.26019500  1
+  O  O24  1  0.50047600  0.49952400  0.76019500  1
+  O  O25  1  0.00095100  0.50047600  0.26019500  1

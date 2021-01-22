@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Sr2AlGaCo2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.40979800
+_cell_length_b   5.62386864
+_cell_length_c   11.81593052
+_cell_angle_alpha   103.53606342
+_cell_angle_beta   103.14661847
+_cell_angle_gamma   90.22828235
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr2AlGaCo2O7
+_chemical_formula_sum   'Sr4 Al2 Ga2 Co4 O14'
+_cell_volume   339.72004029
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.14934400  0.17067600  0.29879800  1
+  Sr  Sr1  1  0.85080700  0.82695200  0.70060100  1
+  Sr  Sr2  1  0.64994900  0.62511000  0.29981000  1
+  Sr  Sr3  1  0.34896600  0.37142600  0.69944100  1
+  Al  Al4  1  0.50823100  0.49871800  0.00328300  1
+  Al  Al5  1  0.00566400  0.00437400  0.00188600  1
+  Ga  Ga6  1  0.21595100  0.82017900  0.50039700  1
+  Ga  Ga7  1  0.71592600  0.17608700  0.49748600  1
+  Co  Co8  1  0.43933100  0.94355900  0.86948100  1
+  Co  Co9  1  0.06805300  0.56804500  0.12675700  1
+  Co  Co10  1  0.94679100  0.44128800  0.88490400  1
+  Co  Co11  1  0.57099500  0.05670600  0.13463900  1
+  O  O12  1  0.87341600  0.22817600  0.10660000  1
+  O  O13  1  0.86748800  0.87222900  0.49984900  1
+  O  O14  1  0.37592800  0.37520400  0.10722900  1
+  O  O15  1  0.85240600  0.37330200  0.64760200  1
+  O  O16  1  0.62570100  0.28351100  0.88610000  1
+  O  O17  1  0.12002800  0.10676800  0.88525500  1
+  O  O18  1  0.36737800  0.12372800  0.49962700  1
+  O  O19  1  0.26469000  0.61160600  0.89551900  1
+  O  O20  1  0.76729300  0.77840700  0.89575900  1
+  O  O21  1  0.35297600  0.78500000  0.65617600  1
+  O  O22  1  0.19928900  0.62767000  0.34727100  1
+  O  O23  1  0.69643000  0.21223500  0.34269500  1
+  O  O24  1  0.72892100  0.72580500  0.11728200  1
+  O  O25  1  0.22871800  0.89056900  0.11534300  1

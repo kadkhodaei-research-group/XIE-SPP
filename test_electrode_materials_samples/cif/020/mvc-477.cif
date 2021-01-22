@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_BaTi4ZnO8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.87482415
+_cell_length_b   5.87482415
+_cell_length_c   8.65760200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000169
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaTi4ZnO8
+_chemical_formula_sum   'Ba1 Ti4 Zn1 O8'
+_cell_volume   258.77241815
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.00000000  0.00000000  0.00000000  1
+  Ti  Ti1  1  0.33333300  0.66666700  0.78564900  1
+  Ti  Ti2  1  0.66666700  0.33333300  0.78564900  1
+  Ti  Ti3  1  0.33333300  0.66666700  0.21435100  1
+  Ti  Ti4  1  0.66666700  0.33333300  0.21435100  1
+  Zn  Zn5  1  0.00000000  0.00000000  0.50000000  1
+  O  O6  1  0.37780400  0.37780400  0.74988300  1
+  O  O7  1  0.62219600  0.00000000  0.74988300  1
+  O  O8  1  0.00000000  0.62219600  0.74988300  1
+  O  O9  1  0.62219600  0.62219600  0.25011700  1
+  O  O10  1  0.00000000  0.37780400  0.25011700  1
+  O  O11  1  0.37780400  0.00000000  0.25011700  1
+  O  O12  1  0.33333300  0.66666700  0.00000000  1
+  O  O13  1  0.66666700  0.33333300  0.00000000  1

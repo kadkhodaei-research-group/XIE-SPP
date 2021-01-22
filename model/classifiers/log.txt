@@ -1,0 +1,96 @@
+Main file: train_CAE_binary_clf.py
+Results path: results/pca_comet/pca_400/
+Training classifiers
+Loading features from: /home/adavari/Data/cod/results/features/run_043/
+Loading all the features.
+Negative and training
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_00.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_01.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_02.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_03.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_10.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_11.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_12.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_13.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_14.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_15.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_16.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_17.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_18.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_4.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_5.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_6.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_7.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_8.pkl.npz
+Loading: /home/adavari/Data/cod/results/features/run_043/features/batch_pos_9.pkl.npz
+Splitting to train and test
+Stats before over sampling
+Total train Samples = 212,084 	(92.3% Positive)
+Total test Samples  = 90,894 	(92.3% Positive)
+Over Sampling ... 
+Stats after over sampling
+Total train Samples = 391,432 	(50.0% Positive)
+Total test Samples  = 167,758 	(50.0% Positive)
+Fit and transform by standard scalar
+Fit and transform by PCA (n_comp = 400)
+Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00Explained variance percentage = 1.00
+Fitting the model
+List of classifiers for training:
+[RandomForestClassifier(max_depth=60, n_estimators=50, n_jobs=4, random_state=0), MLPClassifier(hidden_layer_sizes=(13, 13, 13), max_iter=500, random_state=0)]
+--------------------------------------------------
+RandomForestClassifier(max_depth=60, n_estimators=50, n_jobs=4, random_state=0)
+Classifier name:  Random Forest Classifier
+train_CAE_binary_clf.py:81: RuntimeWarning: invalid value encountered in true_divide
+  precision = TP / (TP + FP)
+Fitting and predicting time: 0:04:08
+accuracy = 81.91%
+              precision    recall  f1-score   support
+
+          -1       0.98      0.65      0.78     83879
+           1       0.74      0.99      0.85     83879
+
+    accuracy                           0.82    167758
+   macro avg       0.86      0.82      0.81    167758
+weighted avg       0.86      0.82      0.81    167758
+
+              precision    recall  f1-score   support
+
+          -1       0.98      0.66      0.79     83879
+           1       0.74      0.99      0.85     83879
+
+    accuracy                           0.82    167758
+   macro avg       0.86      0.82      0.82    167758
+weighted avg       0.86      0.82      0.82    167758
+
+--------------------------------------------------
+MLPClassifier(hidden_layer_sizes=(13, 13, 13), max_iter=500, random_state=0)
+Classifier name:  M LP Classifier
+train_CAE_binary_clf.py:81: RuntimeWarning: divide by zero encountered in true_divide
+  precision = TP / (TP + FP)
+train_CAE_binary_clf.py:81: RuntimeWarning: invalid value encountered in true_divide
+  precision = TP / (TP + FP)
+Fitting and predicting time: 0:06:25
+accuracy = 93.01%
+              precision    recall  f1-score   support
+
+          -1       0.96      0.90      0.93     83879
+           1       0.91      0.96      0.93     83879
+
+    accuracy                           0.93    167758
+   macro avg       0.93      0.93      0.93    167758
+weighted avg       0.93      0.93      0.93    167758
+
+              precision    recall  f1-score   support
+
+          -1       0.96      0.90      0.93     83879
+           1       0.91      0.96      0.93     83879
+
+    accuracy                           0.93    167758
+   macro avg       0.93      0.93      0.93    167758
+weighted avg       0.93      0.93      0.93    167758
+
+Training Voting Classifier
+End time: 2020-11-24 12:33:14.392548
+The run file is being deleted. Saving run file to: results/pca_comet/pca_400/run.pkl
+Duration: 0:13:57
+The End

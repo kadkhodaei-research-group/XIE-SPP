@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Ba2Ca2Tl2Ni3O10
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.85180000
+_cell_length_b   3.90897733
+_cell_length_c   18.86846139
+_cell_angle_alpha   95.77984540
+_cell_angle_beta   95.66330515
+_cell_angle_gamma   89.97653336
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba2Ca2Tl2Ni3O10
+_chemical_formula_sum   'Ba2 Ca2 Tl2 Ni3 O10'
+_cell_volume   281.25792088
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.83593800  0.90507100  0.71880200  1
+  Ba  Ba1  1  0.16679200  0.20464400  0.28185200  1
+  Ca  Ca2  1  0.06312200  0.11981400  0.08779100  1
+  Ca  Ca3  1  0.93577400  0.01377200  0.91289100  1
+  Tl  Tl4  1  0.27798800  0.35828600  0.56287300  1
+  Tl  Tl5  1  0.72828400  0.79987500  0.43780700  1
+  Ni  Ni6  1  0.61259400  0.65697300  0.17232700  1
+  Ni  Ni7  1  0.38761900  0.46615700  0.82888800  1
+  Ni  Ni8  1  0.49104200  0.57556300  0.00185100  1
+  O  O9  1  0.11518600  0.65868300  0.17737800  1
+  O  O10  1  0.68694500  0.71643300  0.32714400  1
+  O  O11  1  0.60945300  0.15503200  0.16869500  1
+  O  O12  1  0.23332300  0.18048700  0.45161300  1
+  O  O13  1  0.48124800  0.07225900  0.99356800  1
+  O  O14  1  0.38349400  0.96328200  0.82240100  1
+  O  O15  1  0.31847900  0.37543000  0.67341800  1
+  O  O16  1  0.88959200  0.47065100  0.83424700  1
+  O  O17  1  0.77280500  0.72574800  0.54889900  1
+  O  O18  1  0.99235800  0.58075300  0.00659300  1
