@@ -80,6 +80,8 @@ The belows chart displays the four different main part of the code.
 #### 4.1. Data preparation 
 Includes two major components to prepare the positive and the negatice classes.
 
+![Alt text](images/data_preparation.png)
+
 * __data_preprocess_positive.py__
 > **prepare_data_from_scratch:** It prepares all the positive data from scratch. If one of the processors is being killed the command line prompts
     that are being run by run_bash_commands can be directly use in the command line in the the same directory.
@@ -105,11 +107,32 @@ Includes two major components to prepare the positive and the negatice classes.
 > **anomaly_gen_lit_based:** Creates crystal anomaly by generating hypothetical structures of well studied crystals and removing known structure
     from the COD. ([Helper package](https://github.com/SUNCAT-Center/AtomicStructureGenerator))
     
-> **cspd_hypotheticals:** Generate all the possible hypothetical crystal structures given the input elements.
+> **cspd_hypotheticals:** Generate all the possible hypothetical crystal structures given the input elements. 
 
+#### 4.2. Data representation by deep convolutional neural network
+Training a convolutional auto-encoder and extracting the latent space representation of crystals. 
 
+![Alt text](images/cae_representation.png)
+* __cnn_classifier_3D.py__
 
-#### 4.2. 
+> **CAE:** This class simplifies generating different keras CAE model models given it's input parameters.
+
+* __samplegenerator.py__
+
+> **SampleGenerator:** This class generate 3D crystal images samples for feeding keras.fit_generator.
+
+* __train_CAE.py__ This file generates and trains the CAE model
+
+* __feature_extraction.py__
+> **whole_dataset_feature_extraction** Given a trained CAE model this function extract all the corresponding features.
+
+#### 4.3. Classification of crystals into synthesizable and anomaly crystal structures
+![Alt text](images/classification_analysis.png)
+
+* __train_CAE_binary_clf.py__ To train the binary classifiers on the latent space representation, run this file. 
+* __predict_synthesis.py__
+> **predict_crystal_synthesis** A simplified crystal synthesizability likelihood predictor.
+
 
 ### 5. Re-training the model from the scratch (This section is partially completed)
 #### 5.1. How to obtain required data bases and packages
