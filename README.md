@@ -5,7 +5,7 @@ Predicting the synthesizability of hypothetical crystals has proven to be challe
 
 ### 2. Examples of usage
 *	Evaluating the synthesis likelihood
-Consider a list of files for evaluation; refer to ASE documentation for the list of compatible types.
+Can work with a list of multiple crystal files as input; Support various formats of crystal file, including cif, POSCAR, ASE atomic object. refer to ASE io documentation for the complete list of compatible types.
 ```python
 from predict_synthesis import predict_crystal_synthesis
 
@@ -24,6 +24,7 @@ predict_crystal_synthesis('path/to/POSCAR', format='vasp')
 
 predict_crystal_synthesis(atoms)
 ```
+* The output is a Dataframe including the synthesizability likelihood predicted by the MLP and RF classifiers plus the final label based on the decision thresholds.  
 * For a more detailed example visit [here](testing_synthesizability_predictor.ipynb)
 
 
