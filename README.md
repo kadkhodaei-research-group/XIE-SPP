@@ -71,8 +71,46 @@ If you wish to visualize atoms as you in the test file:
 $ conda install nglview -c bioconda
 ```
 
-### 4. Re-training the model from the scratch (This section is partially completed)
-#### 4.1 How to obtain required data bases and packages
+### 4. An explanation of the code structure
+The belows chart displays the four different main part of the code. 
+
+**config.py :** Includes some global parameters and paths
+#### 4.1. Data preparation 
+Includes two major components to prepare the positive and the negatice classes.
+
+* __data_preprocess_positive.py__
+> **prepare_data_from_scratch:** It prepares all the positive data from scratch. If one of the processors is being killed the command line prompts
+    that are being run by run_bash_commands can be directly use in the command line in the the same directory.
+    
+> **filter_cif_with_partial_occupancy:** It goes over the COD crystals and saves a list of structures with a partial occupancy to supercell_list.sh
+    
+> **cif2chunk:** It get a directory of CIF files and it parses all the CIF to ASE Atoms Object and save them
+    into chunks of pickle data sets.
+    
+> **cif_chunk2mat:** It converts a list of chunks of CIF files to SPARSE 3D cubic images of crystals.
+
+> **cif_chunk2mat_helper:** The helper function to cif_chunk2mat for parallelization.
+
+> **load_data:** Loads the crystal space representation of whole database and prepares test and train sets, but it doesn't do
+    any processes like SS, PCA or Over-Sampling
+
+> **data_preparation:** Loads the train and test sets and it applies Standard Scalar, PCA and OverSampling.
+
+* __cspd_anomaly_generator.py__
+> **list_all_the_formulas:** Creating a table of all the compositions available in the Literature and their number of repetitions
+    (The mat2vec package borrowed from [here](https://github.com/materialsintelligence/mat2vec))
+    
+> **anomaly_gen_lit_based:** Creates crystal anomaly by generating hypothetical structures of well studied crystals and removing known structure
+    from the COD. ([Helper package](https://github.com/SUNCAT-Center/AtomicStructureGenerator))
+    
+> **cspd_hypotheticals:** Generate all the possible hypothetical crystal structures given the input elements.
+
+
+
+#### 4.2. 
+
+### 5. Re-training the model from the scratch (This section is partially completed)
+#### 5.1. How to obtain required data bases and packages
 Considering a path for all the necessary packages and databases. This is separate from when you install the NN Crystal Synthesizability Predictor package (Requires 200 GB)
 ```bash
 $ export DATA_PATH=/YOUR/CHOICE/OF/PATH/
