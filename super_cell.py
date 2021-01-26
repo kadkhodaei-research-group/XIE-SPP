@@ -4,6 +4,9 @@ import urllib.request
 
 
 class Command(object):
+    """
+    An object for running command line prompts in python with a time out option beyond which the process will terminate
+    """
     def __init__(self, cmd):
         self.cmd = cmd
         self.process = None
@@ -27,6 +30,11 @@ class Command(object):
 
 
 def prepare_supercell(verbose=True):
+    """
+    In case of not having the supercell package it downloads it and prepares it for usage.
+    :param verbose: True by default
+    :return: path to the Supercell's executable
+    """
     if verbose:
         print('Preparing the SuperCell Program', flush=True)
     if not exists(data_path + 'cod/'):
@@ -43,6 +51,14 @@ def prepare_supercell(verbose=True):
 
 
 def run_super_cell_program(super_cell_executable=None, verbose=True):
+    """
+    It goes over the list of structures consisting partial occupancy and it run the Supercell program on them to
+    make a super cells with no occupancy.
+
+    :param super_cell_executable: path to the executable
+    :param verbose: True
+    :return: None
+    """
     if verbose:
         print('Running the Supercell Program to handle the occupancies')
     if super_cell_executable is None:

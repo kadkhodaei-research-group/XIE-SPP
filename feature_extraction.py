@@ -60,6 +60,11 @@ def feature_extraction(samples_path=None, generator=None, run: RunSet = None, fr
 
 
 def whole_dataset_feature_extraction(run: RunSet):
+    """
+    Given a trained CAE model this function extract all the corresponding features.
+    :param run:
+    :return:
+    """
     tot_samples_df = summary(run.chunks_path)
     if run.params.get('pre_made_mat') is True:
         files = list_all_files(run.chunks_path, pattern='[0-9]*/[0-9.]*.npz')

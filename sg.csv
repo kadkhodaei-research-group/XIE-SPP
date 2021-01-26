@@ -1,0 +1,1061 @@
+,ITCn,Hall,Schoenflies,HM,HMu,class,Nau
+1,1, P 1,C1^1,P 1,P 1,triclinic,"1
+"
+2,2,-P 1,Ci^1,P -1,P -1,triclinic,"2
+"
+3,3, P 2y,C2^1,P 1 2 1,P 1 2 1,monoclinic,"2
+"
+4,3, P 2,C2^1,P 1 1 2,P 1 1 2,monoclinic,"2
+"
+5,3, P 2x,C2^1,P 2 1 1,P 2 1 1,monoclinic,"2
+"
+6,4, P 2yb,C2^2,P 1 21 1,P 1 21 1,monoclinic,"2
+"
+7,4, P 2c,C2^2,P 1 1 21,P 1 1 21,monoclinic,"2
+"
+8,4, P 2xa,C2^2,P 21 1 1,P 21 1 1,monoclinic,"2
+"
+9,5, C 2y,C2^3,C 1 2 1,C 1 2 1,monoclinic,"4
+"
+10,5, A 2y,C2^3,A 1 2 1,A 1 2 1,monoclinic,"4
+"
+11,5, I 2y,C2^3,I 1 2 1,I 1 2 1,monoclinic,"4
+"
+12,5, A 2,C2^3,A 1 1 2,A 1 1 2,monoclinic,"4
+"
+13,5, B 2,C2^3,B 1 1 2,B 1 1 2,monoclinic,"4
+"
+14,5, I 2,C2^3,I 1 1 2,I 1 1 2,monoclinic,"4
+"
+15,5, B 2x,C2^3,B 2 1 1,B 2 1 1,monoclinic,"4
+"
+16,5, C 2x,C2^3,C 2 1 1,C 2 1 1,monoclinic,"4
+"
+17,5, I 2x,C2^3,I 2 1 1,I 2 1 1,monoclinic,"4
+"
+18,6, P -2y,Cs^1,P 1 m 1,P 1 m 1,monoclinic,"2
+"
+19,6, P -2,Cs^1,P 1 1 m,P 1 1 m,monoclinic,"2
+"
+20,6, P -2x,Cs^1,P m 1 1,P m 1 1,monoclinic,"2
+"
+21,7, P -2yc,Cs^2,P 1 c 1,P 1 c 1,monoclinic,"2
+"
+22,7, P -2yac,Cs^2,P 1 n 1,P 1 n 1,monoclinic,"2
+"
+23,7, P -2ya,Cs^2,P 1 a 1,P 1 a 1,monoclinic,"2
+"
+24,7, P -2a,Cs^2,P 1 1 a,P 1 1 a,monoclinic,"2
+"
+25,7, P -2ab,Cs^2,P 1 1 n,P 1 1 n,monoclinic,"2
+"
+26,7, P -2b,Cs^2,P 1 1 b,P 1 1 b,monoclinic,"2
+"
+27,7, P -2xb,Cs^2,P b 1 1,P b 1 1,monoclinic,"2
+"
+28,7, P -2xbc,Cs^2,P n 1 1,P n 1 1,monoclinic,"2
+"
+29,7, P -2xc,Cs^2,P c 1 1,P c 1 1,monoclinic,"2
+"
+30,8, C -2y,Cs^3,C 1 m 1,C 1 m 1,monoclinic,"4
+"
+31,8, A -2y,Cs^3,A 1 m 1,A 1 m 1,monoclinic,"4
+"
+32,8, I -2y,Cs^3,I 1 m 1,I 1 m 1,monoclinic,"4
+"
+33,8, A -2,Cs^3,A 1 1 m,A 1 1 m,monoclinic,"4
+"
+34,8, B -2,Cs^3,B 1 1 m,B 1 1 m,monoclinic,"4
+"
+35,8, I -2,Cs^3,I 1 1 m,I 1 1 m,monoclinic,"4
+"
+36,8, B -2x,Cs^3,B m 1 1,B m 1 1,monoclinic,"4
+"
+37,8, C -2x,Cs^3,C m 1 1,C m 1 1,monoclinic,"4
+"
+38,8, I -2x,Cs^3,I m 1 1,I m 1 1,monoclinic,"4
+"
+39,9, C -2yc,Cs^4,C 1 c 1,C 1 c 1,monoclinic,"4
+"
+40,9, A -2yab,Cs^4,A 1 n 1,A 1 n 1,monoclinic,"4
+"
+41,9, I -2ya,Cs^4,I 1 a 1,I 1 a 1,monoclinic,"4
+"
+42,9, A -2ya,Cs^4,A 1 a 1,A 1 a 1,monoclinic,"4
+"
+43,9, C -2yac,Cs^4,C 1 n 1,C 1 n 1,monoclinic,"4
+"
+44,9, I -2yc,Cs^4,I 1 c 1,I 1 c 1,monoclinic,"4
+"
+45,9, A -2a,Cs^4,A 1 1 a,A 1 1 a,monoclinic,"4
+"
+46,9, B -2ab,Cs^4,B 1 1 n,B 1 1 n,monoclinic,"4
+"
+47,9, I -2b,Cs^4,I 1 1 b,I 1 1 b,monoclinic,"4
+"
+48,9, B -2b,Cs^4,B 1 1 b,B 1 1 b,monoclinic,"4
+"
+49,9, A -2ab,Cs^4,A 1 1 n,A 1 1 n,monoclinic,"4
+"
+50,9, I -2a,Cs^4,I 1 1 a,I 1 1 a,monoclinic,"4
+"
+51,9, B -2xb,Cs^4,B b 1 1,B b 1 1,monoclinic,"4
+"
+52,9, C -2xac,Cs^4,C n 1 1,C n 1 1,monoclinic,"4
+"
+53,9, I -2xc,Cs^4,I c 1 1,I c 1 1,monoclinic,"4
+"
+54,9, C -2xc,Cs^4,C c 1 1,C c 1 1,monoclinic,"4
+"
+55,9, B -2xab,Cs^4,B n 1 1,B n 1 1,monoclinic,"4
+"
+56,9, I -2xb,Cs^4,I b 1 1,I b 1 1,monoclinic,"4
+"
+57,10,-P 2y,C2h^1,P 1 2/m 1,P 1 2/m 1,monoclinic,"4
+"
+58,10,-P 2,C2h^1,P 1 1 2/m,P 1 1 2/m,monoclinic,"4
+"
+59,10,-P 2x,C2h^1,P 2/m 1 1,P 2/m 1 1,monoclinic,"4
+"
+60,11,-P 2yb,C2h^2,P 1 21/m 1,P 1 21/m 1,monoclinic,"4
+"
+61,11,-P 2c,C2h^2,P 1 1 21/m,P 1 1 21/m,monoclinic,"4
+"
+62,11,-P 2xa,C2h^2,P 21/m 1 1,P 21/m 1 1,monoclinic,"4
+"
+63,12,-C 2y,C2h^3,C 1 2/m 1,C 1 2/m 1,monoclinic,"8
+"
+64,12,-A 2y,C2h^3,A 1 2/m 1,A 1 2/m 1,monoclinic,"8
+"
+65,12,-I 2y,C2h^3,I 1 2/m 1,I 1 2/m 1,monoclinic,"8
+"
+66,12,-A 2,C2h^3,A 1 1 2/m,A 1 1 2/m,monoclinic,"8
+"
+67,12,-B 2,C2h^3,B 1 1 2/m,B 1 1 2/m,monoclinic,"8
+"
+68,12,-I 2,C2h^3,I 1 1 2/m,I 1 1 2/m,monoclinic,"8
+"
+69,12,-B 2x,C2h^3,B 2/m 1 1,B 2/m 1 1,monoclinic,"8
+"
+70,12,-C 2x,C2h^3,C 2/m 1 1,C 2/m 1 1,monoclinic,"8
+"
+71,12,-I 2x,C2h^3,I 2/m 1 1,I 2/m 1 1,monoclinic,"8
+"
+72,13,-P 2yc,C2h^4,P 1 2/c 1,P 1 2/c 1,monoclinic,"4
+"
+73,13,-P 2yac,C2h^4,P 1 2/n 1,P 1 2/n 1,monoclinic,"4
+"
+74,13,-P 2ya,C2h^4,P 1 2/a 1,P 1 2/a 1,monoclinic,"4
+"
+75,13,-P 2a,C2h^4,P 1 1 2/a,P 1 1 2/a,monoclinic,"4
+"
+76,13,-P 2ab,C2h^4,P 1 1 2/n,P 1 1 2/n,monoclinic,"4
+"
+77,13,-P 2b,C2h^4,P 1 1 2/b,P 1 1 2/b,monoclinic,"4
+"
+78,13,-P 2xb,C2h^4,P 2/b 1 1,P 2/b 1 1,monoclinic,"4
+"
+79,13,-P 2xbc,C2h^4,P 2/n 1 1,P 2/n 1 1,monoclinic,"4
+"
+80,13,-P 2xc,C2h^4,P 2/c 1 1,P 2/c 1 1,monoclinic,"4
+"
+81,14,-P 2ybc,C2h^5,P 1 21/c 1,P 1 21/c 1,monoclinic,"4
+"
+82,14,-P 2yn,C2h^5,P 1 21/n 1,P 1 21/n 1,monoclinic,"4
+"
+83,14,-P 2yab,C2h^5,P 1 21/a 1,P 1 21/a 1,monoclinic,"4
+"
+84,14,-P 2ac,C2h^5,P 1 1 21/a,P 1 1 21/a,monoclinic,"4
+"
+85,14,-P 2n,C2h^5,P 1 1 21/n,P 1 1 21/n,monoclinic,"4
+"
+86,14,-P 2bc,C2h^5,P 1 1 21/b,P 1 1 21/b,monoclinic,"4
+"
+87,14,-P 2xab,C2h^5,P 21/b 1 1,P 21/b 1 1,monoclinic,"4
+"
+88,14,-P 2xn,C2h^5,P 21/n 1 1,P 21/n 1 1,monoclinic,"4
+"
+89,14,-P 2xac,C2h^5,P 21/c 1 1,P 21/c 1 1,monoclinic,"4
+"
+90,15,-C 2yc,C2h^6,C 1 2/c 1,C 1 2/c 1,monoclinic,"8
+"
+91,15,-A 2yab,C2h^6,A 1 2/n 1,A 1 2/n 1,monoclinic,"8
+"
+92,15,-I 2ya,C2h^6,I 1 2/a 1,I 1 2/a 1,monoclinic,"8
+"
+93,15,-A 2ya,C2h^6,A 1 2/a 1,A 1 2/a 1,monoclinic,"8
+"
+94,15,-C 2yac,C2h^6,C 1 2/n 1,C 1 2/n 1,monoclinic,"8
+"
+95,15,-I 2yc,C2h^6,I 1 2/c 1,I 1 2/c 1,monoclinic,"8
+"
+96,15,-A 2a,C2h^6,A 1 1 2/a,A 1 1 2/a,monoclinic,"8
+"
+97,15,-B 2ab,C2h^6,B 1 1 2/n,B 1 1 2/n,monoclinic,"8
+"
+98,15,-I 2b,C2h^6,I 1 1 2/b,I 1 1 2/b,monoclinic,"8
+"
+99,15,-B 2b,C2h^6,B 1 1 2/b,B 1 1 2/b,monoclinic,"8
+"
+100,15,-A 2ab,C2h^6,A 1 1 2/n,A 1 1 2/n,monoclinic,"8
+"
+101,15,-I 2a,C2h^6,I 1 1 2/a,I 1 1 2/a,monoclinic,"8
+"
+102,15,-B 2xb,C2h^6,B 2/b 1 1,B 2/b 1 1,monoclinic,"8
+"
+103,15,-C 2xac,C2h^6,C 2/n 1 1,C 2/n 1 1,monoclinic,"8
+"
+104,15,-I 2xc,C2h^6,I 2/c 1 1,I 2/c 1 1,monoclinic,"8
+"
+105,15,-C 2xc,C2h^6,C 2/c 1 1,C 2/c 1 1,monoclinic,"8
+"
+106,15,-B 2xab,C2h^6,B 2/n 1 1,B 2/n 1 1,monoclinic,"8
+"
+107,15,-I 2xb,C2h^6,I 2/b 1 1,I 2/b 1 1,monoclinic,"8
+"
+108,16, P 2 2,D2^1,P 2 2 2,P 2 2 2,orthorhombic,"4
+"
+109,17, P 2c 2,D2^2,P 2 2 21,P 2 2 21,orthorhombic,"4
+"
+110,17, P 2a 2a,D2^2,P 21 2 2,P 21 2 2,orthorhombic,"4
+"
+111,17, P 2 2b,D2^2,P 2 21 2,P 2 21 2,orthorhombic,"4
+"
+112,18, P 2 2ab,D2^3,P 21 21 2,P 21 21 2,orthorhombic,"4
+"
+113,18, P 2bc 2,D2^3,P 2 21 21,P 2 21 21,orthorhombic,"4
+"
+114,18, P 2ac 2ac,D2^3,P 21 2 21,P 21 2 21,orthorhombic,"4
+"
+115,19, P 2ac 2ab,D2^4,P 21 21 21,P 21 21 21,orthorhombic,"4
+"
+116,20, C 2c 2,D2^5,C 2 2 21,C 2 2 21,orthorhombic,"8
+"
+117,20, A 2a 2a,D2^5,A 21 2 2,A 21 2 2,orthorhombic,"8
+"
+118,20, B 2 2b,D2^5,B 2 21 2,B 2 21 2,orthorhombic,"8
+"
+119,21, C 2 2,D2^6,C 2 2 2,C 2 2 2,orthorhombic,"8
+"
+120,21, A 2 2,D2^6,A 2 2 2,A 2 2 2,orthorhombic,"8
+"
+121,21, B 2 2,D2^6,B 2 2 2,B 2 2 2,orthorhombic,"8
+"
+122,22, F 2 2,D2^7,F 2 2 2,F 2 2 2,orthorhombic,"16
+"
+123,23, I 2 2,D2^8,I 2 2 2,I 2 2 2,orthorhombic,"8
+"
+124,24, I 2b 2c,D2^9,I 21 21 21,I 21 21 21,orthorhombic,"8
+"
+125,25, P 2 -2,C2v^1,P m m 2,P m m 2,orthorhombic,"4
+"
+126,25, P -2 2,C2v^1,P 2 m m,P 2 m m,orthorhombic,"4
+"
+127,25, P -2 -2,C2v^1,P m 2 m,P m 2 m,orthorhombic,"4
+"
+128,26, P 2c -2,C2v^2,P m c 21,P m c 21,orthorhombic,"4
+"
+129,26, P 2c -2c,C2v^2,P c m 21,P c m 21,orthorhombic,"4
+"
+130,26, P -2a 2a,C2v^2,P 21 m a,P 21 m a,orthorhombic,"4
+"
+131,26, P -2 2a,C2v^2,P 21 a m,P 21 a m,orthorhombic,"4
+"
+132,26, P -2 -2b,C2v^2,P b 21 m,P b 21 m,orthorhombic,"4
+"
+133,26, P -2b -2,C2v^2,P m 21 b,P m 21 b,orthorhombic,"4
+"
+134,27, P 2 -2c,C2v^3,P c c 2,P c c 2,orthorhombic,"4
+"
+135,27, P -2a 2,C2v^3,P 2 a a,P 2 a a,orthorhombic,"4
+"
+136,27, P -2b -2b,C2v^3,P b 2 b,P b 2 b,orthorhombic,"4
+"
+137,28, P 2 -2a,C2v^4,P m a 2,P m a 2,orthorhombic,"4
+"
+138,28, P 2 -2b,C2v^4,P b m 2,P b m 2,orthorhombic,"4
+"
+139,28, P -2b 2,C2v^4,P 2 m b,P 2 m b,orthorhombic,"4
+"
+140,28, P -2c 2,C2v^4,P 2 c m,P 2 c m,orthorhombic,"4
+"
+141,28, P -2c -2c,C2v^4,P c 2 m,P c 2 m,orthorhombic,"4
+"
+142,28, P -2a -2a,C2v^4,P m 2 a,P m 2 a,orthorhombic,"4
+"
+143,29, P 2c -2ac,C2v^5,P c a 21,P c a 21,orthorhombic,"4
+"
+144,29, P 2c -2b,C2v^5,P b c 21,P b c 21,orthorhombic,"4
+"
+145,29, P -2b 2a,C2v^5,P 21 a b,P 21 a b,orthorhombic,"4
+"
+146,29, P -2ac 2a,C2v^5,P 21 c a,P 21 c a,orthorhombic,"4
+"
+147,29, P -2bc -2c,C2v^5,P c 21 b,P c 21 b,orthorhombic,"4
+"
+148,29, P -2a -2ab,C2v^5,P b 21 a,P b 21 a,orthorhombic,"4
+"
+149,30, P 2 -2bc,C2v^6,P n c 2,P n c 2,orthorhombic,"4
+"
+150,30, P 2 -2ac,C2v^6,P c n 2,P c n 2,orthorhombic,"4
+"
+151,30, P -2ac 2,C2v^6,P 2 n a,P 2 n a,orthorhombic,"4
+"
+152,30, P -2ab 2,C2v^6,P 2 a n,P 2 a n,orthorhombic,"4
+"
+153,30, P -2ab -2ab,C2v^6,P b 2 n,P b 2 n,orthorhombic,"4
+"
+154,30, P -2bc -2bc,C2v^6,P n 2 b,P n 2 b,orthorhombic,"4
+"
+155,31, P 2ac -2,C2v^7,P m n 21,P m n 21,orthorhombic,"4
+"
+156,31, P 2bc -2bc,C2v^7,P n m 21,P n m 21,orthorhombic,"4
+"
+157,31, P -2ab 2ab,C2v^7,P 21 m n,P 21 m n,orthorhombic,"4
+"
+158,31, P -2 2ac,C2v^7,P 21 n m,P 21 n m,orthorhombic,"4
+"
+159,31, P -2 -2bc,C2v^7,P n 21 m,P n 21 m,orthorhombic,"4
+"
+160,31, P -2ab -2,C2v^7,P m 21 n,P m 21 n,orthorhombic,"4
+"
+161,32, P 2 -2ab,C2v^8,P b a 2,P b a 2,orthorhombic,"4
+"
+162,32, P -2bc 2,C2v^8,P 2 c b,P 2 c b,orthorhombic,"4
+"
+163,32, P -2ac -2ac,C2v^8,P c 2 a,P c 2 a,orthorhombic,"4
+"
+164,33, P 2c -2n,C2v^9,P n a 21,P n a 21,orthorhombic,"4
+"
+165,33, P 2c -2ab,C2v^9,P b n 21,P b n 21,orthorhombic,"4
+"
+166,33, P -2bc 2a,C2v^9,P 21 n b,P 21 n b,orthorhombic,"4
+"
+167,33, P -2n 2a,C2v^9,P 21 c n,P 21 c n,orthorhombic,"4
+"
+168,33, P -2n -2ac,C2v^9,P c 21 n,P c 21 n,orthorhombic,"4
+"
+169,33, P -2ac -2n,C2v^9,P n 21 a,P n 21 a,orthorhombic,"4
+"
+170,34, P 2 -2n,C2v^10,P n n 2,P n n 2,orthorhombic,"4
+"
+171,34, P -2n 2,C2v^10,P 2 n n,P 2 n n,orthorhombic,"4
+"
+172,34, P -2n -2n,C2v^10,P n 2 n,P n 2 n,orthorhombic,"4
+"
+173,35, C 2 -2,C2v^11,C m m 2,C m m 2,orthorhombic,"8
+"
+174,35, A -2 2,C2v^11,A 2 m m,A 2 m m,orthorhombic,"8
+"
+175,35, B -2 -2,C2v^11,B m 2 m,B m 2 m,orthorhombic,"8
+"
+176,36, C 2c -2,C2v^12,C m c 21,C m c 21,orthorhombic,"8
+"
+177,36, C 2c -2c,C2v^12,C c m 21,C c m 21,orthorhombic,"8
+"
+178,36, A -2a 2a,C2v^12,A 21 m a,A 21 m a,orthorhombic,"8
+"
+179,36, A -2 2a,C2v^12,A 21 a m,A 21 a m,orthorhombic,"8
+"
+180,36, B -2 -2b,C2v^12,B b 21 m,B b 21 m,orthorhombic,"8
+"
+181,36, B -2b -2,C2v^12,B m 21 b,B m 21 b,orthorhombic,"8
+"
+182,37, C 2 -2c,C2v^13,C c c 2,C c c 2,orthorhombic,"8
+"
+183,37, A -2a 2,C2v^13,A 2 a a,A 2 a a,orthorhombic,"8
+"
+184,37, B -2b -2b,C2v^13,B b 2 b,B b 2 b,orthorhombic,"8
+"
+185,38, A 2 -2,C2v^14,A m m 2,A m m 2,orthorhombic,"8
+"
+186,38, B 2 -2,C2v^14,B m m 2,B m m 2,orthorhombic,"8
+"
+187,38, B -2 2,C2v^14,B 2 m m,B 2 m m,orthorhombic,"8
+"
+188,38, C -2 2,C2v^14,C 2 m m,C 2 m m,orthorhombic,"8
+"
+189,38, C -2 -2,C2v^14,C m 2 m,C m 2 m,orthorhombic,"8
+"
+190,38, A -2 -2,C2v^14,A m 2 m,A m 2 m,orthorhombic,"8
+"
+191,39, A 2 -2b,C2v^15,A b m 2,A b m 2,orthorhombic,"8
+"
+192,39, B 2 -2a,C2v^15,B m a 2,B m a 2,orthorhombic,"8
+"
+193,39, B -2a 2,C2v^15,B 2 c m,B 2 c m,orthorhombic,"8
+"
+194,39, C -2a 2,C2v^15,C 2 m b,C 2 m b,orthorhombic,"8
+"
+195,39, C -2a -2a,C2v^15,C m 2 a,C m 2 a,orthorhombic,"8
+"
+196,39, A -2b -2b,C2v^15,A c 2 m,A c 2 m,orthorhombic,"8
+"
+197,40, A 2 -2a,C2v^16,A m a 2,A m a 2,orthorhombic,"8
+"
+198,40, B 2 -2b,C2v^16,B b m 2,B b m 2,orthorhombic,"8
+"
+199,40, B -2b 2,C2v^16,B 2 m b,B 2 m b,orthorhombic,"8
+"
+200,40, C -2c 2,C2v^16,C 2 c m,C 2 c m,orthorhombic,"8
+"
+201,40, C -2c -2c,C2v^16,C c 2 m,C c 2 m,orthorhombic,"8
+"
+202,40, A -2a -2a,C2v^16,A m 2 a,A m 2 a,orthorhombic,"8
+"
+203,41, A 2 -2ab,C2v^17,A b a 2,A b a 2,orthorhombic,"8
+"
+204,41, B 2 -2ab,C2v^17,B b a 2,B b a 2,orthorhombic,"8
+"
+205,41, B -2ab 2,C2v^17,B 2 c b,B 2 c b,orthorhombic,"8
+"
+206,41, C -2ac 2,C2v^17,C 2 c b,C 2 c b,orthorhombic,"8
+"
+207,41, C -2ac -2ac,C2v^17,C c 2 a,C c 2 a,orthorhombic,"8
+"
+208,41, A -2ab -2ab,C2v^17,A c 2 a,A c 2 a,orthorhombic,"8
+"
+209,42, F 2 -2,C2v^18,F m m 2,F m m 2,orthorhombic,"16
+"
+210,42, F -2 2,C2v^18,F 2 m m,F 2 m m,orthorhombic,"16
+"
+211,42, F -2 -2,C2v^18,F m 2 m,F m 2 m,orthorhombic,"16
+"
+212,43, F 2 -2d,C2v^19,F d d 2,F d d 2,orthorhombic,"16
+"
+213,43, F -2d 2,C2v^19,F 2 d d,F 2 d d,orthorhombic,"16
+"
+214,43, F -2d -2d,C2v^19,F d 2 d,F d 2 d,orthorhombic,"16
+"
+215,44, I 2 -2,C2v^20,I m m 2,I m m 2,orthorhombic,"8
+"
+216,44, I -2 2,C2v^20,I 2 m m,I 2 m m,orthorhombic,"8
+"
+217,44, I -2 -2,C2v^20,I m 2 m,I m 2 m,orthorhombic,"8
+"
+218,45, I 2 -2c,C2v^21,I b a 2,I b a 2,orthorhombic,"8
+"
+219,45, I -2a 2,C2v^21,I 2 c b,I 2 c b,orthorhombic,"8
+"
+220,45, I -2b -2b,C2v^21,I c 2 a,I c 2 a,orthorhombic,"8
+"
+221,46, I 2 -2a,C2v^22,I m a 2,I m a 2,orthorhombic,"8
+"
+222,46, I 2 -2b,C2v^22,I b m 2,I b m 2,orthorhombic,"8
+"
+223,46, I -2b 2,C2v^22,I 2 m b,I 2 m b,orthorhombic,"8
+"
+224,46, I -2c 2,C2v^22,I 2 c m,I 2 c m,orthorhombic,"8
+"
+225,46, I -2c -2c,C2v^22,I c 2 m,I c 2 m,orthorhombic,"8
+"
+226,46, I -2a -2a,C2v^22,I m 2 a,I m 2 a,orthorhombic,"8
+"
+227,47,-P 2 2,D2h^1,P m m m,P m m m,orthorhombic,"8
+"
+228,48, P 2 2 -1n,D2h^2,P n n n,P n n n :1,orthorhombic,"8
+"
+229,48,-P 2ab 2bc,D2h^2,P n n n,P n n n :2,orthorhombic,"8
+"
+230,49,-P 2 2c,D2h^3,P c c m,P c c m,orthorhombic,"8
+"
+231,49,-P 2a 2,D2h^3,P m a a,P m a a,orthorhombic,"8
+"
+232,49,-P 2b 2b,D2h^3,P b m b,P b m b,orthorhombic,"8
+"
+233,50, P 2 2 -1ab,D2h^4,P b a n,P b a n :1,orthorhombic,"8
+"
+234,50,-P 2ab 2b,D2h^4,P b a n,P b a n :2,orthorhombic,"8
+"
+235,50, P 2 2 -1bc,D2h^4,P n c b,P n c b :1,orthorhombic,"8
+"
+236,50,-P 2b 2bc,D2h^4,P n c b,P n c b :2,orthorhombic,"8
+"
+237,50, P 2 2 -1ac,D2h^4,P c n a,P c n a :1,orthorhombic,"8
+"
+238,50,-P 2a 2c,D2h^4,P c n a,P c n a :2,orthorhombic,"8
+"
+239,51,-P 2a 2a,D2h^5,P m m a,P m m a,orthorhombic,"8
+"
+240,51,-P 2b 2,D2h^5,P m m b,P m m b,orthorhombic,"8
+"
+241,51,-P 2 2b,D2h^5,P b m m,P b m m,orthorhombic,"8
+"
+242,51,-P 2c 2c,D2h^5,P c m m,P c m m,orthorhombic,"8
+"
+243,51,-P 2c 2,D2h^5,P m c m,P m c m,orthorhombic,"8
+"
+244,51,-P 2 2a,D2h^5,P m a m,P m a m,orthorhombic,"8
+"
+245,52,-P 2a 2bc,D2h^6,P n n a,P n n a,orthorhombic,"8
+"
+246,52,-P 2b 2n,D2h^6,P n n b,P n n b,orthorhombic,"8
+"
+247,52,-P 2n 2b,D2h^6,P b n n,P b n n,orthorhombic,"8
+"
+248,52,-P 2ab 2c,D2h^6,P c n n,P c n n,orthorhombic,"8
+"
+249,52,-P 2ab 2n,D2h^6,P n c n,P n c n,orthorhombic,"8
+"
+250,52,-P 2n 2bc,D2h^6,P n a n,P n a n,orthorhombic,"8
+"
+251,53,-P 2ac 2,D2h^7,P m n a,P m n a,orthorhombic,"8
+"
+252,53,-P 2bc 2bc,D2h^7,P n m b,P n m b,orthorhombic,"8
+"
+253,53,-P 2ab 2ab,D2h^7,P b m n,P b m n,orthorhombic,"8
+"
+254,53,-P 2 2ac,D2h^7,P c n m,P c n m,orthorhombic,"8
+"
+255,53,-P 2 2bc,D2h^7,P n c m,P n c m,orthorhombic,"8
+"
+256,53,-P 2ab 2,D2h^7,P m a n,P m a n,orthorhombic,"8
+"
+257,54,-P 2a 2ac,D2h^8,P c c a,P c c a,orthorhombic,"8
+"
+258,54,-P 2b 2c,D2h^8,P c c b,P c c b,orthorhombic,"8
+"
+259,54,-P 2a 2b,D2h^8,P b a a,P b a a,orthorhombic,"8
+"
+260,54,-P 2ac 2c,D2h^8,P c a a,P c a a,orthorhombic,"8
+"
+261,54,-P 2bc 2b,D2h^8,P b c b,P b c b,orthorhombic,"8
+"
+262,54,-P 2b 2ab,D2h^8,P b a b,P b a b,orthorhombic,"8
+"
+263,55,-P 2 2ab,D2h^9,P b a m,P b a m,orthorhombic,"8
+"
+264,55,-P 2bc 2,D2h^9,P m c b,P m c b,orthorhombic,"8
+"
+265,55,-P 2ac 2ac,D2h^9,P c m a,P c m a,orthorhombic,"8
+"
+266,56,-P 2ab 2ac,D2h^10,P c c n,P c c n,orthorhombic,"8
+"
+267,56,-P 2ac 2bc,D2h^10,P n a a,P n a a,orthorhombic,"8
+"
+268,56,-P 2bc 2ab,D2h^10,P b n b,P b n b,orthorhombic,"8
+"
+269,57,-P 2c 2b,D2h^11,P b c m,P b c m,orthorhombic,"8
+"
+270,57,-P 2c 2ac,D2h^11,P c a m,P c a m,orthorhombic,"8
+"
+271,57,-P 2ac 2a,D2h^11,P m c a,P m c a,orthorhombic,"8
+"
+272,57,-P 2b 2a,D2h^11,P m a b,P m a b,orthorhombic,"8
+"
+273,57,-P 2a 2ab,D2h^11,P b m a,P b m a,orthorhombic,"8
+"
+274,57,-P 2bc 2c,D2h^11,P c m b,P c m b,orthorhombic,"8
+"
+275,58,-P 2 2n,D2h^12,P n n m,P n n m,orthorhombic,"8
+"
+276,58,-P 2n 2,D2h^12,P m n n,P m n n,orthorhombic,"8
+"
+277,58,-P 2n 2n,D2h^12,P n m n,P n m n,orthorhombic,"8
+"
+278,59, P 2 2ab -1ab,D2h^13,P m m n,P m m n :1,orthorhombic,"8
+"
+279,59,-P 2ab 2a,D2h^13,P m m n,P m m n :2,orthorhombic,"8
+"
+280,59, P 2bc 2 -1bc,D2h^13,P n m m,P n m m :1,orthorhombic,"8
+"
+281,59,-P 2c 2bc,D2h^13,P n m m,P n m m :2,orthorhombic,"8
+"
+282,59, P 2ac 2ac -1ac,D2h^13,P m n m,P m n m :1,orthorhombic,"8
+"
+283,59,-P 2c 2a,D2h^13,P m n m,P m n m :2,orthorhombic,"8
+"
+284,60,-P 2n 2ab,D2h^14,P b c n,P b c n,orthorhombic,"8
+"
+285,60,-P 2n 2c,D2h^14,P c a n,P c a n,orthorhombic,"8
+"
+286,60,-P 2a 2n,D2h^14,P n c a,P n c a,orthorhombic,"8
+"
+287,60,-P 2bc 2n,D2h^14,P n a b,P n a b,orthorhombic,"8
+"
+288,60,-P 2ac 2b,D2h^14,P b n a,P b n a,orthorhombic,"8
+"
+289,60,-P 2b 2ac,D2h^14,P c n b,P c n b,orthorhombic,"8
+"
+290,61,-P 2ac 2ab,D2h^15,P b c a,P b c a,orthorhombic,"8
+"
+291,61,-P 2bc 2ac,D2h^15,P c a b,P c a b,orthorhombic,"8
+"
+292,62,-P 2ac 2n,D2h^16,P n m a,P n m a,orthorhombic,"8
+"
+293,62,-P 2bc 2a,D2h^16,P m n b,P m n b,orthorhombic,"8
+"
+294,62,-P 2c 2ab,D2h^16,P b n m,P b n m,orthorhombic,"8
+"
+295,62,-P 2n 2ac,D2h^16,P c m n,P c m n,orthorhombic,"8
+"
+296,62,-P 2n 2a,D2h^16,P m c n,P m c n,orthorhombic,"8
+"
+297,62,-P 2c 2n,D2h^16,P n a m,P n a m,orthorhombic,"8
+"
+298,63,-C 2c 2,D2h^17,C m c m,C m c m,orthorhombic,"16
+"
+299,63,-C 2c 2c,D2h^17,C c m m,C c m m,orthorhombic,"16
+"
+300,63,-A 2a 2a,D2h^17,A m m a,A m m a,orthorhombic,"16
+"
+301,63,-A 2 2a,D2h^17,A m a m,A m a m,orthorhombic,"16
+"
+302,63,-B 2 2b,D2h^17,B b m m,B b m m,orthorhombic,"16
+"
+303,63,-B 2b 2,D2h^17,B m m b,B m m b,orthorhombic,"16
+"
+304,64,-C 2ac 2,D2h^18,C m c a,C m c a,orthorhombic,"16
+"
+305,64,-C 2ac 2ac,D2h^18,C c m b,C c m b,orthorhombic,"16
+"
+306,64,-A 2ab 2ab,D2h^18,A b m a,A b m a,orthorhombic,"16
+"
+307,64,-A 2 2ab,D2h^18,A c a m,A c a m,orthorhombic,"16
+"
+308,64,-B 2 2ab,D2h^18,B b c m,B b c m,orthorhombic,"16
+"
+309,64,-B 2ab 2,D2h^18,B m a b,B m a b,orthorhombic,"16
+"
+310,65,-C 2 2,D2h^19,C m m m,C m m m,orthorhombic,"16
+"
+311,65,-A 2 2,D2h^19,A m m m,A m m m,orthorhombic,"16
+"
+312,65,-B 2 2,D2h^19,B m m m,B m m m,orthorhombic,"16
+"
+313,66,-C 2 2c,D2h^20,C c c m,C c c m,orthorhombic,"16
+"
+314,66,-A 2a 2,D2h^20,A m a a,A m a a,orthorhombic,"16
+"
+315,66,-B 2b 2b,D2h^20,B b m b,B b m b,orthorhombic,"16
+"
+316,67,-C 2a 2,D2h^21,C m m a,C m m a,orthorhombic,"16
+"
+317,67,-C 2a 2a,D2h^21,C m m b,C m m b,orthorhombic,"16
+"
+318,67,-A 2b 2b,D2h^21,A b m m,A b m m,orthorhombic,"16
+"
+319,67,-A 2 2b,D2h^21,A c m m,A c m m,orthorhombic,"16
+"
+320,67,-B 2 2a,D2h^21,B m c m,B m c m,orthorhombic,"16
+"
+321,67,-B 2a 2,D2h^21,B m a m,B m a m,orthorhombic,"16
+"
+322,68, C 2 2 -1ac,D2h^22,C c c a,C c c a :1,orthorhombic,"16
+"
+323,68,-C 2a 2ac,D2h^22,C c c a,C c c a :2,orthorhombic,"16
+"
+324,68, C 2 2 -1ac,D2h^22,C c c b,C c c b :1,orthorhombic,"16
+"
+325,68,-C 2a 2c,D2h^22,C c c b,C c c b :2,orthorhombic,"16
+"
+326,68, A 2 2 -1ab,D2h^22,A b a a,A b a a :1,orthorhombic,"16
+"
+327,68,-A 2a 2b,D2h^22,A b a a,A b a a :2,orthorhombic,"16
+"
+328,68, A 2 2 -1ab,D2h^22,A c a a,A c a a :1,orthorhombic,"16
+"
+329,68,-A 2ab 2b,D2h^22,A c a a,A c a a :2,orthorhombic,"16
+"
+330,68, B 2 2 -1ab,D2h^22,B b c b,B b c b :1,orthorhombic,"16
+"
+331,68,-B 2ab 2b,D2h^22,B b c b,B b c b :2,orthorhombic,"16
+"
+332,68, B 2 2 -1ab,D2h^22,B b a b,B b a b :1,orthorhombic,"16
+"
+333,68,-B 2b 2ab,D2h^22,B b a b,B b a b :2,orthorhombic,"16
+"
+334,69,-F 2 2,D2h^23,F m m m,F m m m,orthorhombic,"32
+"
+335,70, F 2 2 -1d,D2h^24,F d d d,F d d d :1,orthorhombic,"32
+"
+336,70,-F 2uv 2vw,D2h^24,F d d d,F d d d :2,orthorhombic,"32
+"
+337,71,-I 2 2,D2h^25,I m m m,I m m m,orthorhombic,"16
+"
+338,72,-I 2 2c,D2h^26,I b a m,I b a m,orthorhombic,"16
+"
+339,72,-I 2a 2,D2h^26,I m c b,I m c b,orthorhombic,"16
+"
+340,72,-I 2b 2b,D2h^26,I c m a,I c m a,orthorhombic,"16
+"
+341,73,-I 2b 2c,D2h^27,I b c a,I b c a,orthorhombic,"16
+"
+342,73,-I 2a 2b,D2h^27,I c a b,I c a b,orthorhombic,"16
+"
+343,74,-I 2b 2,D2h^28,I m m a,I m m a,orthorhombic,"16
+"
+344,74,-I 2a 2a,D2h^28,I m m b,I m m b,orthorhombic,"16
+"
+345,74,-I 2c 2c,D2h^28,I b m m,I b m m,orthorhombic,"16
+"
+346,74,-I 2 2b,D2h^28,I c m m,I c m m,orthorhombic,"16
+"
+347,74,-I 2 2a,D2h^28,I m c m,I m c m,orthorhombic,"16
+"
+348,74,-I 2c 2,D2h^28,I m a m,I m a m,orthorhombic,"16
+"
+349,75, P 4,C4^1,P 4,P 4,tetragonal,"4
+"
+350,76, P 4w,C4^2,P 41,P 41,tetragonal,"4
+"
+351,77, P 4c,C4^3,P 42,P 42,tetragonal,"4
+"
+352,78, P 4cw,C4^4,P 43,P 43,tetragonal,"4
+"
+353,79, I 4,C4^5,I 4,I 4,tetragonal,"8
+"
+354,80, I 4bw,C4^6,I 41,I 41,tetragonal,"8
+"
+355,81, P -4,S4^1,P -4,P -4,tetragonal,"4
+"
+356,82, I -4,S4^2,I -4,I -4,tetragonal,"8
+"
+357,83,-P 4,C4h^1,P 4/m,P 4/m,tetragonal,"8
+"
+358,84,-P 4c,C4h^2,P 42/m,P 42/m,tetragonal,"8
+"
+359,85, P 4ab -1ab,C4h^3,P 4/n,P 4/n :1,tetragonal,"8
+"
+360,85,-P 4a,C4h^3,P 4/n,P 4/n :2,tetragonal,"8
+"
+361,86, P 4n -1n,C4h^4,P 42/n,P 42/n :1,tetragonal,"8
+"
+362,86,-P 4bc,C4h^4,P 42/n,P 42/n :2,tetragonal,"8
+"
+363,87,-I 4,C4h^5,I 4/m,I 4/m,tetragonal,"16
+"
+364,88, I 4bw -1bw,C4h^6,I 41/a,I 41/a :1,tetragonal,"16
+"
+365,88,-I 4ad,C4h^6,I 41/a,I 41/a :2,tetragonal,"16
+"
+366,89, P 4 2,D4^1,P 4 2 2,P 4 2 2,tetragonal,"8
+"
+367,90, P 4ab 2ab,D4^2,P 4 21 2,P 4 21 2,tetragonal,"8
+"
+368,91, P 4w 2c,D4^3,P 41 2 2,P 41 2 2,tetragonal,"8
+"
+369,92, P 4abw 2nw,D4^4,P 41 21 2,P 41 21 2,tetragonal,"8
+"
+370,93, P 4c 2,D4^5,P 42 2 2,P 42 2 2,tetragonal,"8
+"
+371,94, P 4n 2n,D4^6,P 42 21 2,P 42 21 2,tetragonal,"8
+"
+372,95, P 4cw 2c,D4^7,P 43 2 2,P 43 2 2,tetragonal,"8
+"
+373,96, P 4nw 2abw,D4^8,P 43 21 2,P 43 21 2,tetragonal,"8
+"
+374,97, I 4 2,D4^9,I 4 2 2,I 4 2 2,tetragonal,"16
+"
+375,98, I 4bw 2bw,D4^10,I 41 2 2,I 41 2 2,tetragonal,"16
+"
+376,99, P 4 -2,C4v^1,P 4 m m,P 4 m m,tetragonal,"8
+"
+377,100, P 4 -2ab,C4v^2,P 4 b m,P 4 b m,tetragonal,"8
+"
+378,101, P 4c -2c,C4v^3,P 42 c m,P 42 c m,tetragonal,"8
+"
+379,102, P 4n -2n,C4v^4,P 42 n m,P 42 n m,tetragonal,"8
+"
+380,103, P 4 -2c,C4v^5,P 4 c c,P 4 c c,tetragonal,"8
+"
+381,104, P 4 -2n,C4v^6,P 4 n c,P 4 n c,tetragonal,"8
+"
+382,105, P 4c -2,C4v^7,P 42 m c,P 42 m c,tetragonal,"8
+"
+383,106, P 4c -2ab,C4v^8,P 42 b c,P 42 b c,tetragonal,"8
+"
+384,107, I 4 -2,C4v^9,I 4 m m,I 4 m m,tetragonal,"16
+"
+385,108, I 4 -2c,C4v^10,I 4 c m,I 4 c m,tetragonal,"16
+"
+386,109, I 4bw -2,C4v^11,I 41 m d,I 41 m d,tetragonal,"16
+"
+387,110, I 4bw -2c,C4v^12,I 41 c d,I 41 c d,tetragonal,"16
+"
+388,111, P -4 2,D2d^1,P -4 2 m,P -4 2 m,tetragonal,"8
+"
+389,112, P -4 2c,D2d^2,P -4 2 c,P -4 2 c,tetragonal,"8
+"
+390,113, P -4 2ab,D2d^3,P -4 21 m,P -4 21 m,tetragonal,"8
+"
+391,114, P -4 2n,D2d^4,P -4 21 c,P -4 21 c,tetragonal,"8
+"
+392,115, P -4 -2,D2d^5,P -4 m 2,P -4 m 2,tetragonal,"8
+"
+393,116, P -4 -2c,D2d^6,P -4 c 2,P -4 c 2,tetragonal,"8
+"
+394,117, P -4 -2ab,D2d^7,P -4 b 2,P -4 b 2,tetragonal,"8
+"
+395,118, P -4 -2n,D2d^8,P -4 n 2,P -4 n 2,tetragonal,"8
+"
+396,119, I -4 -2,D2d^9,I -4 m 2,I -4 m 2,tetragonal,"16
+"
+397,120, I -4 -2c,D2d^10,I -4 c 2,I -4 c 2,tetragonal,"16
+"
+398,121, I -4 2,D2d^11,I -4 2 m,I -4 2 m,tetragonal,"16
+"
+399,122, I -4 2bw,D2d^12,I -4 2 d,I -4 2 d,tetragonal,"16
+"
+400,123,-P 4 2,D4h^1,P 4/m m m,P 4/m m m,tetragonal,"16
+"
+401,124,-P 4 2c,D4h^2,P 4/m c c,P 4/m c c,tetragonal,"16
+"
+402,125, P 4 2 -1ab,D4h^3,P 4/n b m,P 4/n b m :1,tetragonal,"16
+"
+403,125,-P 4a 2b,D4h^3,P 4/n b m,P 4/n b m :2,tetragonal,"16
+"
+404,126, P 4 2 -1n,D4h^4,P 4/n n c,P 4/n n c :1,tetragonal,"16
+"
+405,126,-P 4a 2bc,D4h^4,P 4/n n c,P 4/n n c :2,tetragonal,"16
+"
+406,127,-P 4 2ab,D4h^5,P 4/m b m,P 4/m b m,tetragonal,"16
+"
+407,128,-P 4 2n,D4h^6,P 4/m n c,P 4/m n c,tetragonal,"16
+"
+408,129, P 4ab 2ab -1ab,D4h^7,P 4/n m m,P 4/n m m :1,tetragonal,"16
+"
+409,129,-P 4a 2a,D4h^7,P 4/n m m,P 4/n m m :2,tetragonal,"16
+"
+410,130, P 4ab 2n -1ab,D4h^8,P 4/n c c,P 4/n c c :1,tetragonal,"16
+"
+411,130,-P 4a 2ac,D4h^8,P 4/n c c,P 4/n c c :2,tetragonal,"16
+"
+412,131,-P 4c 2,D4h^9,P 42/m m c,P 42/m m c,tetragonal,"16
+"
+413,132,-P 4c 2c,D4h^10,P 42/m c m,P 42/m c m,tetragonal,"16
+"
+414,133, P 4n 2c -1n,D4h^11,P 42/n b c,P 42/n b c :1,tetragonal,"16
+"
+415,133,-P 4ac 2b,D4h^11,P 42/n b c,P 42/n b c :2,tetragonal,"16
+"
+416,134, P 4n 2 -1n,D4h^12,P 42/n n m,P 42/n n m :1,tetragonal,"16
+"
+417,134,-P 4ac 2bc,D4h^12,P 42/n n m,P 42/n n m :2,tetragonal,"16
+"
+418,135,-P 4c 2ab,D4h^13,P 42/m b c,P 42/m b c,tetragonal,"16
+"
+419,136,-P 4n 2n,D4h^14,P 42/m n m,P 42/m n m,tetragonal,"16
+"
+420,137, P 4n 2n -1n,D4h^15,P 42/n m c,P 42/n m c :1,tetragonal,"16
+"
+421,137,-P 4ac 2a,D4h^15,P 42/n m c,P 42/n m c :2,tetragonal,"16
+"
+422,138, P 4n 2ab -1n,D4h^16,P 42/n c m,P 42/n c m :1,tetragonal,"16
+"
+423,138,-P 4ac 2ac,D4h^16,P 42/n c m,P 42/n c m :2,tetragonal,"16
+"
+424,139,-I 4 2,D4h^17,I 4/m m m,I 4/m m m,tetragonal,"32
+"
+425,140,-I 4 2c,D4h^18,I 4/m c m,I 4/m c m,tetragonal,"32
+"
+426,141, I 4bw 2bw -1bw,D4h^19,I 41/a m d,I 41/a m d :1,tetragonal,"32
+"
+427,141,-I 4bd 2,D4h^19,I 41/a m d,I 41/a m d :2,tetragonal,"32
+"
+428,142, I 4bw 2aw -1bw,D4h^20,I 41/a c d,I 41/a c d :1,tetragonal,"32
+"
+429,142,-I 4bd 2c,D4h^20,I 41/a c d,I 41/a c d :2,tetragonal,"32
+"
+430,143, P 3,C3^1,P 3,P 3,trigonal,"3
+"
+431,144, P 31,C3^2,P 31,P 31,trigonal,"3
+"
+432,145, P 32,C3^3,P 32,P 32,trigonal,"3
+"
+433,146, R 3,C3^4,R 3,R 3 :H,rhombohedral,"9
+"
+434,146, P 3*,C3^4,R 3,R 3 :R,rhombohedral,"3
+"
+435,147,-P 3,C3i^1,P -3,P -3,trigonal,"6
+"
+436,148,-R 3,C3i^2,R -3,R -3 :H,rhombohedral,"18
+"
+437,148,-P 3*,C3i^2,R -3,R -3 :R,rhombohedral,"6
+"
+438,149, P 3 2,D3^1,P 3 1 2,P 3 1 2,trigonal,"6
+"
+439,150," P 3 2""",D3^2,P 3 2 1,P 3 2 1,trigonal,"6
+"
+440,151, P 31 2 (0 0 4),D3^3,P 31 1 2,P 31 1 2,trigonal,"6
+"
+441,152," P 31 2""",D3^4,P 31 2 1,P 31 2 1,trigonal,"6
+"
+442,153, P 32 2 (0 0 2),D3^5,P 32 1 2,P 32 1 2,trigonal,"6
+"
+443,154," P 32 2""",D3^6,P 32 2 1,P 32 2 1,trigonal,"6
+"
+444,155," R 3 2""",D3^7,R 3 2,R 3 2 :H,rhombohedral,"18
+"
+445,155, P 3* 2,D3^7,R 3 2,R 3 2 :R,rhombohedral,"6
+"
+446,156," P 3 -2""",C3v^1,P 3 m 1,P 3 m 1,trigonal,"6
+"
+447,157, P 3 -2,C3v^2,P 3 1 m,P 3 1 m,trigonal,"6
+"
+448,158," P 3 -2""c",C3v^3,P 3 c 1,P 3 c 1,trigonal,"6
+"
+449,159, P 3 -2c,C3v^4,P 3 1 c,P 3 1 c,trigonal,"6
+"
+450,160," R 3 -2""",C3v^5,R 3 m,R 3 m :H,rhombohedral,"18
+"
+451,160, P 3* -2,C3v^5,R 3 m,R 3 m :R,rhombohedral,"6
+"
+452,161," R 3 -2""c",C3v^6,R 3 c,R 3 c :H,rhombohedral,"18
+"
+453,161, P 3* -2n,C3v^6,R 3 c,R 3 c :R,rhombohedral,"6
+"
+454,162,-P 3 2,D3d^1,P -3 1 m,P -3 1 m,trigonal,"12
+"
+455,163,-P 3 2c,D3d^2,P -3 1 c,P -3 1 c,trigonal,"12
+"
+456,164,"-P 3 2""",D3d^3,P -3 m 1,P -3 m 1,trigonal,"12
+"
+457,165,"-P 3 2""c",D3d^4,P -3 c 1,P -3 c 1,trigonal,"12
+"
+458,166,"-R 3 2""",D3d^5,R -3 m,R -3 m :H,rhombohedral,"36
+"
+459,166,-P 3* 2,D3d^5,R -3 m,R -3 m :R,rhombohedral,"12
+"
+460,167,"-R 3 2""c",D3d^6,R -3 c,R -3 c :H,rhombohedral,"36
+"
+461,167,-P 3* 2n,D3d^6,R -3 c,R -3 c :R,rhombohedral,"12
+"
+462,168, P 6,C6^1,P 6,P 6,hexagonal,"6
+"
+463,169, P 61,C6^2,P 61,P 61,hexagonal,"6
+"
+464,170, P 65,C6^3,P 65,P 65,hexagonal,"6
+"
+465,171, P 62,C6^4,P 62,P 62,hexagonal,"6
+"
+466,172, P 64,C6^5,P 64,P 64,hexagonal,"6
+"
+467,173, P 6c,C6^6,P 63,P 63,hexagonal,"6
+"
+468,174, P -6,C3h^1,P -6,P -6,hexagonal,"6
+"
+469,175,-P 6,C6h^1,P 6/m,P 6/m,hexagonal,"12
+"
+470,176,-P 6c,C6h^2,P 63/m,P 63/m,hexagonal,"12
+"
+471,177, P 6 2,D6^1,P 6 2 2,P 6 2 2,hexagonal,"12
+"
+472,178, P 61 2 (0 0 5),D6^2,P 61 2 2,P 61 2 2,hexagonal,"12
+"
+473,179, P 65 2 (0 0 1),D6^3,P 65 2 2,P 65 2 2,hexagonal,"12
+"
+474,180, P 62 2 (0 0 4),D6^4,P 62 2 2,P 62 2 2,hexagonal,"12
+"
+475,181, P 64 2 (0 0 2),D6^5,P 64 2 2,P 64 2 2,hexagonal,"12
+"
+476,182, P 6c 2c,D6^6,P 63 2 2,P 63 2 2,hexagonal,"12
+"
+477,183, P 6 -2,C6v^1,P 6 m m,P 6 m m,hexagonal,"12
+"
+478,184, P 6 -2c,C6v^2,P 6 c c,P 6 c c,hexagonal,"12
+"
+479,185, P 6c -2,C6v^3,P 63 c m,P 63 c m,hexagonal,"12
+"
+480,186, P 6c -2c,C6v^4,P 63 m c,P 63 m c,hexagonal,"12
+"
+481,187, P -6 2,D3h^1,P -6 m 2,P -6 m 2,hexagonal,"12
+"
+482,188, P -6c 2,D3h^2,P -6 c 2,P -6 c 2,hexagonal,"12
+"
+483,189, P -6 -2,D3h^3,P -6 2 m,P -6 2 m,hexagonal,"12
+"
+484,190, P -6c -2c,D3h^4,P -6 2 c,P -6 2 c,hexagonal,"12
+"
+485,191,-P 6 2,D6h^1,P 6/m m m,P 6/m m m,hexagonal,"24
+"
+486,192,-P 6 2c,D6h^2,P 6/m c c,P 6/m c c,hexagonal,"24
+"
+487,193,-P 6c 2,D6h^3,P 63/m c m,P 63/m c m,hexagonal,"24
+"
+488,194,-P 6c 2c,D6h^4,P 63/m m c,P 63/m m c,hexagonal,"24
+"
+489,195, P 2 2 3,T^1,P 2 3,P 2 3,cubic,"12
+"
+490,196, F 2 2 3,T^2,F 2 3,F 2 3,cubic,"48
+"
+491,197, I 2 2 3,T^3,I 2 3,I 2 3,cubic,"24
+"
+492,198, P 2ac 2ab 3,T^4,P 21 3,P 21 3,cubic,"12
+"
+493,199, I 2b 2c 3,T^5,I 21 3,I 21 3,cubic,"24
+"
+494,200,-P 2 2 3,Th^1,P m -3,P m -3,cubic,"24
+"
+495,201, P 2 2 3 -1n,Th^2,P n -3,P n -3 :1,cubic,"24
+"
+496,201,-P 2ab 2bc 3,Th^2,P n -3,P n -3 :2,cubic,"24
+"
+497,202,-F 2 2 3,Th^3,F m -3,F m -3,cubic,"96
+"
+498,203, F 2 2 3 -1d,Th^4,F d -3,F d -3 :1,cubic,"96
+"
+499,203,-F 2uv 2vw 3,Th^4,F d -3,F d -3 :2,cubic,"96
+"
+500,204,-I 2 2 3,Th^5,I m -3,I m -3,cubic,"48
+"
+501,205,-P 2ac 2ab 3,Th^6,P a -3,P a -3,cubic,"24
+"
+502,206,-I 2b 2c 3,Th^7,I a -3,I a -3,cubic,"48
+"
+503,207, P 4 2 3,O^1,P 4 3 2,P 4 3 2,cubic,"24
+"
+504,208, P 4n 2 3,O^2,P 42 3 2,P 42 3 2,cubic,"24
+"
+505,209, F 4 2 3,O^3,F 4 3 2,F 4 3 2,cubic,"96
+"
+506,210, F 4d 2 3,O^4,F 41 3 2,F 41 3 2,cubic,"96
+"
+507,211, I 4 2 3,O^5,I 4 3 2,I 4 3 2,cubic,"48
+"
+508,212, P 4acd 2ab 3,O^6,P 43 3 2,P 43 3 2,cubic,"24
+"
+509,213, P 4bd 2ab 3,O^7,P 41 3 2,P 41 3 2,cubic,"24
+"
+510,214, I 4bd 2c 3,O^8,I 41 3 2,I 41 3 2,cubic,"48
+"
+511,215, P -4 2 3,Td^1,P -4 3 m,P -4 3 m,cubic,"24
+"
+512,216, F -4 2 3,Td^2,F -4 3 m,F -4 3 m,cubic,"96
+"
+513,217, I -4 2 3,Td^3,I -4 3 m,I -4 3 m,cubic,"48
+"
+514,218, P -4n 2 3,Td^4,P -4 3 n,P -4 3 n,cubic,"24
+"
+515,219, F -4a 2 3,Td^5,F -4 3 c,F -4 3 c,cubic,"96
+"
+516,220, I -4bd 2c 3,Td^6,I -4 3 d,I -4 3 d,cubic,"48
+"
+517,221,-P 4 2 3,Oh^1,P m -3 m,P m -3 m,cubic,"48
+"
+518,222, P 4 2 3 -1n,Oh^2,P n -3 n,P n -3 n :1,cubic,"48
+"
+519,222,-P 4a 2bc 3,Oh^2,P n -3 n,P n -3 n :2,cubic,"48
+"
+520,223,-P 4n 2 3,Oh^3,P m -3 n,P m -3 n,cubic,"48
+"
+521,224, P 4n 2 3 -1n,Oh^4,P n -3 m,P n -3 m :1,cubic,"48
+"
+522,224,-P 4bc 2bc 3,Oh^4,P n -3 m,P n -3 m :2,cubic,"48
+"
+523,225,-F 4 2 3,Oh^5,F m -3 m,F m -3 m,cubic,"192
+"
+524,226,-F 4a 2 3,Oh^6,F m -3 c,F m -3 c,cubic,"192
+"
+525,227, F 4d 2 3 -1d,Oh^7,F d -3 m,F d -3 m :1,cubic,"192
+"
+526,227,-F 4vw 2vw 3,Oh^7,F d -3 m,F d -3 m :2,cubic,"192
+"
+527,228, F 4d 2 3 -1ad,Oh^8,F d -3 c,F d -3 c :1,cubic,"192
+"
+528,228,-F 4ud 2vw 3,Oh^8,F d -3 c,F d -3 c :2,cubic,"192
+"
+529,229,-I 4 2 3,Oh^9,I m -3 m,I m -3 m,cubic,"96
+"
+530,230,-I 4bd 2c 3,Oh^10,I a -3 d,I a -3 d,cubic,"96
+"

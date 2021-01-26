@@ -1,15 +1,31 @@
-from cod_tools import atom2mat, cif_parser
+from crystal_tools import atom2mat, cif_parser
 from utility.util_crystal import *
 from ase.io import read
 from super_cell import run_super_cell_program, prepare_supercell
 import multiprocessing
-from cod_tools import spars_mat_2_3d_mat
+from crystal_tools import spars_mat_2_3d_mat
 import urllib.request
 
 
 def cif2chunk(total_sections=100, query_filter=None, data_set=None,
               output_path='cod/data_sets/all/cif_chunks/', shuffle=True,
               parsers=None, pattern='**/*.cif', random_seed=0, selected_sections=None):
+    """
+    It get a directory of CIF files and it parses all the CIF to ASE Atoms Object and save them
+    into chunks of pickle data sets.
+
+    :param total_sections: Total number of chunks of data
+    :param query_filter: To filter some of the CIF files
+    :param data_set: The path to the input CIF files directory
+    :param output_path: The output path
+    :param shuffle: shuffle the data set before splitting to chunks
+    :param parsers: ase parser
+    :param pattern: pattern by which it recursively goes to children directory looking for CIF files
+    :param random_seed:
+    :param selected_sections: To create one some of the chunks only. Deterministic random number is necessary in this
+    case and can be manipulated by the random_seed variable
+    :return: None
+    """
     if selected_sections is None:
         selected_sections = range(total_sections)
     if parsers is None:
@@ -79,6 +95,24 @@ def cif_chunk2mat(total_sections=100, selected_sections=None, pad_len=17.5, n_bi
                   target_data='cod/data_sets/all/cif_chunks/', output_dataset=None, parser=None,
                   channels=None, make_mat_files=True, n_cpu=1, check_for_outliers=True, npz_sub_sec=None,
                   repairing=False):
+    """
+    It converts a list of chunks of CIF files to SPARSE 3D cubic images of crystals.
+    :param total_sections: Total number of chunks of data
+    :param selected_sections: To create one some of the chunks only. Deterministic random number is necessary in this
+    case and can be manipulated by the random_seed variable
+    :param pad_len: The cube's side length in (A)
+    :param n_bins: Number of generated bins in each side of the cube
+    :param break_into_subsection: Split each chunk
+    :param target_data: The path to the input chunks
+    :param output_dataset: The path to the output chunks
+    :param parser: ase
+    :param channels: None uses the default which is atomic number, group and period for each atom
+    :param make_mat_files: Creating the 3D unwrapped images as well (Faster to train but larger to store)
+    :param n_cpu: Number of parallel jobs to separately calculate each chunk
+    :param check_for_outliers: It removes the outliers
+    :param npz_sub_sec: number of splits into sub-chunks when make_mat_files is on
+    :return:
+    """
     if output_dataset is None:
         output_dataset = '/'.join(target_data.split('/')[:-2]) + f'/mat_set_{n_bins}/'
     if channels is None:
@@ -151,6 +185,11 @@ def cif_chunk2mat(total_sections=100, selected_sections=None, pad_len=17.5, n_bi
 
 
 def cif_chunk2mat_helper(itr=None):
+    """
+    The helper function to cif_chunk2mat for parallelization.
+    :param itr:
+    :return:
+    """
     i_sel = None
     try:
         inp = itr['inp']
@@ -280,7 +319,12 @@ def chunk_filter(target_data='cod/data_sets/all/cif_chunks/', output_dataset=Non
         summary(output_dir)
 
 
-def cif_occ_filter(verbose=True):
+def filter_cif_with_partial_occupancy(verbose=True):
+    """
+    It goes over the COD crystals and saves a list of structures with a partial occupancy to supercell_list.sh
+    :param verbose:
+    :return: None
+    """
     def check_occ(a):
         occ = False
         if 'occupancy' not in a.info:
@@ -323,6 +367,18 @@ def cif_occ_filter(verbose=True):
 
 def load_data(path=None, verbose=True, test_size=0.3, limited_dataset=False, pos_frac=1.,
               random_state=1):
+    """
+    Loads the crystal space representation of whole database and prepares test and train sets, but it doesn't do
+    any processes like SS, PCA or Over-Sampling
+
+    :param path: Path to the data files
+    :param verbose: True
+    :param test_size: The ratio of test set
+    :param limited_dataset: Use it for testing purposes only (It doesn't prepare all the structures)
+    :param pos_frac: Only loads a portion of positive set
+    :param random_state: The random machine state
+    :return: X_train, y_train, X_test, y_test
+    """
     from sklearn.model_selection import train_test_split
     from sklearn.utils import shuffle
 
@@ -414,6 +470,26 @@ def load_data(path=None, verbose=True, test_size=0.3, limited_dataset=False, pos
 def data_preparation(over_sampling=True, standard_scaler=True, apply_pca=True, pca_n_comp=1000, split_data_frac=1.,
                      pos_frac=1., make_dev_data=False, use_all_data=True, random_state=1,
                      path=None, return_pca_ss=False):
+    """
+    Loads the train and test sets and it applies Standard Scalar, PCA and OverSampling.
+
+    :param over_sampling: Does Over Sampling if True
+    :param standard_scaler: Applies Standard Scaler if True
+    :param apply_pca: Applies PCA if True
+    :param pca_n_comp: Number of components to keep applying PCA
+    :param split_data_frac: Use a fraction of data
+    :param pos_frac: Use a fraction of positive set
+    :param make_dev_data: Create development set in addition to test and train
+    :param use_all_data: Prepares all the data
+    :param random_state: Machine's random state
+    :param path: Location of data sets
+    :param return_pca_ss: Request the PCA and SS methods to be returned
+    :return: X_train, y_train, X_test, y_test
+    or
+    X_train, y_train, X_test, y_test, X_dev, y_dev
+    or
+    Dictionary
+    """
     from sklearn.model_selection import train_test_split
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import StandardScaler
@@ -511,6 +587,11 @@ def data_preparation(over_sampling=True, standard_scaler=True, apply_pca=True, p
 
 
 def prepare_data_from_scratch():
+    """
+    It prepares all the positive data from scratch. If one of the processors is being killed the command line prompts
+    that are being run by run_bash_commands can be directly use in the command line in the the same directory.
+    :return:
+    """
     if not exists(data_path + 'cod-cifs-mysql.tgz'):
         print(f'Downloading the database to: {data_path}cod-cifs-mysql.tgz', flush=True)
         url = 'http://www.crystallography.net/archives/cod-cifs-mysql.tgz'
@@ -524,7 +605,7 @@ def prepare_data_from_scratch():
         input('Is the extracting process completed?')
 
     prepare_supercell()
-    cif_occ_filter()
+    filter_cif_with_partial_occupancy()
     run_super_cell_program()
 
     cif2chunk(data_set=['cod/cif_no_occupancy/', 'cod/cif_supercell/'],
