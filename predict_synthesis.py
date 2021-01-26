@@ -1,5 +1,5 @@
 from utility.util_crystal import *
-from cod_tools import *
+from crystal_tools import *
 from keras.models import load_model
 from cnn_classifier_3D import CAE
 from train_CAE_binary_clf import data_preparation, plot_roc
@@ -10,9 +10,24 @@ from sklearn.utils import shuffle
 
 def predict_crystal_synthesis(atoms, auto_encoder=None, classifiers=None, verbose=True, pad_len=70, n_bins=128,
                               save_tmp_encoded_atoms=True, redo_calc=False, bulk_calculations=False,
-                              parallel_cifs=False, n_jobs=1, convert2df=True, labels=None, skip_svm=True,
+                              convert2df=True, labels=None, skip_svm=True,
                               input_format: str = None,
                               ):
+    """
+    A simplified crystal synthesizability likelihood predictor.
+    :param atoms: Filename(s), ASE Atom Object(s)
+    :param auto_encoder: Leave it empty unless you're trying a new CAE
+    :param classifiers: Leave it empty unless you're trying a new classifier
+    :param verbose: True
+    :param pad_len: Side length of the cubic 3D image
+    :param n_bins: The number of bins on each side of the cube
+    :param save_tmp_encoded_atoms: Save the constructed images to re-run faster for the next time
+    :param redo_calc: Redo all the computations even when the tmp encoded images are available
+    :param convert2df: Return a dataframe
+    :param input_format: If the input is not a ASE Atoms Object or a CIF file use
+    the format according to ASE input format
+    :return:
+    """
     def single_crystal(atom, encoded_atoms=None):
         path = None
         if (auto_encoder_path is not None) and (isinstance(atom, str)):

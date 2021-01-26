@@ -14,6 +14,9 @@ from keras.utils.vis_utils import plot_model
 
 
 class CAE:
+    """
+    This class simplifies generating different keras CAE model models given it's input parameters.
+    """
     def __init__(self,
                  input_shape,
                  channels=None,

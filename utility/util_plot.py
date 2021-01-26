@@ -197,6 +197,8 @@ def periodic_table_heatmap(elemental_data, cbar_label="", cbar_label_size=14,
                            ax=None, fig=None, not_show_blank_value=False,
                            ):
     """
+    # borrowed and modified from PYMATGEN: https://pymatgen.org/pymatgen.core.periodic_table.html
+
     A static method that generates a heat map overlayed on a periodic table.
 
     Args:

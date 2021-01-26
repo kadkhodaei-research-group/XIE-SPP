@@ -2,15 +2,14 @@ from keras.utils import Sequence
 from utility.util_crystal import *
 import utility.util_crystal as util
 import warnings
-from data_preprocess import cif_chunk2mat
-from cod_tools import channel_generator
+from data_preprocess_positive import cif_chunk2mat
+from crystal_tools import channel_generator
 
 
 class SampleGenerator(Sequence):
     """
-    This generate samples for feeding keras.fit_generator.
-    It gets an idx and it decides the which batch to be passed based on the initialized file names.
-
+    This class generate 3D crystal images samples for feeding keras.fit_generator.
+    It gets an idx and it decides which batch to be passed based on the initialized file names.
     -Ali Davari
     """
     def __init__(self, filename, labels=None, batch_size=3, tot_batches=None, directory='', verbose=0, saved_chunks=True,

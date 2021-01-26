@@ -10,11 +10,26 @@ from ase import Atoms
 
 
 def atom2mat(filename, len_limit=50., n_bins=64, atoms_unit=None, return_atom=False):
+    """
+    Converting the ASE Atom Objects (Crystal structures) to sparse 3D images.
+
+    :param filename:
+    :param len_limit:
+    :param n_bins:
+    :param atoms_unit:
+    :param return_atom:
+    :return:
+    """
     points_to_check = np.asarray([[0, 0, 0], [0, 0, n_bins], [0, n_bins, 0], [n_bins, 0, 0],
                                   [n_bins, n_bins, 0], [n_bins, 0, n_bins], [0, n_bins, n_bins],
                                   [n_bins, n_bins, n_bins]])
 
     def check_box_emptiness_error():
+        """
+        Finds if some atoms passes the corner of the created cube before cutting. If return False, the unit cell
+        has been replicated enough to fill the cube
+        :return:
+        """
         # To check if any atom can be found beyond the corner points of the box
         for i in range(len(points_to_check)):
             point = points_to_check[i]
@@ -34,6 +49,10 @@ def atom2mat(filename, len_limit=50., n_bins=64, atoms_unit=None, return_atom=Fa
         return False
 
     def find_min_dist_cor():
+        """
+        Finds the maximum of the minimum-distance of the super cell atoms from the corners of the cube
+        :return:
+        """
         min_dist = 0
         for i in range(len(points_to_check)):
             dist = min(np.sum((Bind - points_to_check[i]) ** 2, axis=1) ** 0.5)
@@ -154,6 +173,14 @@ def atom2mat(filename, len_limit=50., n_bins=64, atoms_unit=None, return_atom=Fa
 
 
 def spars_mat_2_3d_mat(data, n_bin, channels_list):
+    """
+    Expands a sparse 3D matrix
+
+    :param data:
+    :param n_bin:
+    :param channels_list:
+    :return:
+    """
     if not isinstance(data, list):
         data = [data]
     mat2 = np.zeros((len(data), n_bin, n_bin, n_bin, len(channels_list)))
@@ -167,6 +194,12 @@ def spars_mat_2_3d_mat(data, n_bin, channels_list):
 
 
 def channel_generator(b_types, chan_list):
+    """
+    Assigning the channels of the image based on the atomic numbers
+    :param b_types:
+    :param chan_list:
+    :return:
+    """
     b_types[b_types < 1] = 1
     if np.any(b_types < 1):
         raise ValueError('There is a negative element in the types of atoms')
@@ -299,6 +332,11 @@ def plot_nearest_neighbors(data_set='cod/data_sets/all_pymatgen_5e-2/cif_chunks'
 
 
 def find_min_dist(atoms_1):
+    """
+    Finds the minimum distance of atoms in a crystal structure
+    :param atoms_1: ASE Atoms Object
+    :return:
+    """
     from ase.neighborlist import NeighborList
     from ase.data import covalent_radii
 
@@ -334,6 +372,17 @@ def find_min_dist(atoms_1):
 
 def cif_parser(filename, site_tolerance=1e-3, parser='ase', check_min_dist_cond=False,
                input_format: str = None, check_size_of_crystal_cond=False):
+    """
+    Reads a CIF structure from a file or from string
+
+    :param filename:
+    :param site_tolerance:
+    :param parser:
+    :param check_min_dist_cond:
+    :param input_format:
+    :param check_size_of_crystal_cond:
+    :return:
+    """
     atom = None
     # if not isinstance(site_tolerance, str):
     if not parser == 'ase':
@@ -372,6 +421,12 @@ def cif_parser(filename, site_tolerance=1e-3, parser='ase', check_min_dist_cond=
 
 
 def atom2prop(atom, **kwargs):
+    """
+    The helper function to 'distribution' function for calculating the attributes.
+    :param atom: ASE Atom Object
+    :param kwargs:
+    :return:
+    """
     prop = kwargs['prop']
     if isinstance(atom, dict):
         if prop == 'density-mat':
@@ -409,6 +464,28 @@ def distribution(data_sets=None, property_fn=atom2prop, names=None, previous_run
                  threshold_z_score=6, threshold_iqr=99, outlier_detection=True, return_data=False,
                  exclude_name=None, exclude_condition=None,
                  **kwargs):
+    """
+    Computes different distribution of properties in a dataset
+
+    :param data_sets:
+    :param property_fn:
+    :param names:
+    :param previous_run:
+    :param bar:
+    :param bins:
+    :param x_lim_lo:
+    :param x_lim_hi:
+    :param equal_axis:
+    :param normalization:
+    :param threshold_z_score:
+    :param threshold_iqr:
+    :param outlier_detection:
+    :param return_data:
+    :param exclude_name:
+    :param exclude_condition:
+    :param kwargs:
+    :return:
+    """
     if exclude_name is None:
         exclude_name = ''
     if isinstance(exclude_condition, str):
