@@ -74,6 +74,8 @@ $ conda install nglview -c bioconda
 ### 4. An explanation of the code structure
 The belows chart displays the four different main part of the code. 
 
+![Alt text](images/model_major_steps.png)
+
 **config.py :** Includes some global parameters and paths
 #### 4.1. Data preparation 
 Includes two major components to prepare the positive and the negatice classes.
