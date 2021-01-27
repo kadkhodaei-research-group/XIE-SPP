@@ -74,7 +74,8 @@ If you wish to visualize atoms as you in the test file:
 $ conda install nglview -c bioconda
 ```
 
-### 4. An explanation of the code structure
+### 4. An explanation of the code structure 
+This section is useful if you need to implement different parts of the project for your own interest. For using the synthesizability predictor use the section 1&2.
 The belows chart displays the four different main part of the code. 
 
 ![Alt text](images/model_major_steps.png)
@@ -138,6 +139,7 @@ Training a convolutional auto-encoder and extracting the latent space representa
 
 
 ### 5. Re-training the model from the scratch (This section is partially completed)
+This section is useful for users who are interested to train our model on their dataset of interest. If you only need to use the trained model for synthesizability prediction, refer to sections 2 & 3.
 #### 5.1. How to obtain required data bases and packages
 Considering a path for all the necessary packages and databases. This is separate from when you install the NN Crystal Synthesizability Predictor package (Requires 200 GB)
 ```bash
