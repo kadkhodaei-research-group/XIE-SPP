@@ -1,5 +1,7 @@
 # Neural Network Crystal Synthesizability Predictor (NNCSP)
 
+![https://creativecommons.org/licenses/by-nd/4.0/](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
+
 ### 1.Abstract
 Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern the crystalline materials synthesis. Yet exploring the exponentially large space of novel crystals for any future application demands an accurate predictive capability for synthesis likelihood to avoid the haphazard trial-and-error. While prevalent benchmarks of synthesizability rely on the energetics of crystal structures, we take an alternative approach to select features of synthesizability from the latent information embedded in existing crystalline materials. We convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by their chemical attributes and use them for training a neural-network convolutional auto-encoder (CAE). We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials from the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirmed our model's validity. The usefulness of the model is illustrated by predicting the synthesizability of hypothetical candidates for battery electrodes and thermoelectric applications.
 
