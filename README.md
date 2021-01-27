@@ -1,11 +1,13 @@
-# Neural Network Crystal Synthesizability Predictor
+# Neural Network Crystal Synthesizability Predictor (NNCSP)
 
 ### 1.Abstract
-Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern the crystalline materials synthesis. Yet exploring the exponentially large space of novel crystals for any future application demands an accurate predictive capability for synthesis likelihood to avoid the haphazard trial-and-error. While prevalent benchmarks of synthesizability rely on the energetics of crystal structures, we take an alternative approach to select features of synthesizability from the latent information embedded in existing crystalline materials. We convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by their chemical attributes and use them for training a neural-network convolutional autoencoder (CAE). We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials from the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirmed our model's validity. The usefulness of the model is illustrated by predicting the synthesizability of hypothetical candidates for battery electrodes and thermoelectric applications.
+Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern the crystalline materials synthesis. Yet exploring the exponentially large space of novel crystals for any future application demands an accurate predictive capability for synthesis likelihood to avoid the haphazard trial-and-error. While prevalent benchmarks of synthesizability rely on the energetics of crystal structures, we take an alternative approach to select features of synthesizability from the latent information embedded in existing crystalline materials. We convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by their chemical attributes and use them for training a neural-network convolutional auto-encoder (CAE). We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials from the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirmed our model's validity. The usefulness of the model is illustrated by predicting the synthesizability of hypothetical candidates for battery electrodes and thermoelectric applications.
 
 ### 2. Examples of usage
 *	Evaluating the synthesis likelihood
-Can work with a list of multiple crystal files as input; Support various formats of crystal file, including cif, POSCAR, ASE atomic object. refer to ASE io documentation for the complete list of compatible types.
+
+NNCSP supports multiple crystal files, including CIF, POSCAR, ASE Atoms-Objects; See the [ASE io documentation](https://wiki.fysik.dtu.dk/ase/ase/io/io.html) for a complete list of compatible types.
+
 ```python
 from predict_synthesis import predict_crystal_synthesis
 
@@ -24,7 +26,7 @@ predict_crystal_synthesis('path/to/POSCAR', format='vasp')
 
 predict_crystal_synthesis(atoms)
 ```
-* The output is a Dataframe including the synthesizability likelihood predicted by the MLP and RF classifiers plus the final label based on the decision thresholds.  
+* The output is a [(pandas) dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) including the synthesizability likelihood predicted by the multi-layer perceptron (MLP) and random forest (RF) classifiers plus the final label based on the decision thresholds.  
 * For a more detailed example visit [here](testing_synthesizability_predictor.ipynb)
 
 
@@ -43,7 +45,7 @@ $ echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc
 $ source ~/.bashrc
 $ conda update conda
 ```
-Create an envirenment for this package (It's is possible to use other envirnments if you already have one ready) and install all the [minimum requirements](minimum_requirements.txt) to run this model.
+Create an envirenment for NNCSP package (It's is possible to use other envirnments if you already have one ready) and install all the [minimum requirements](minimum_requirements.txt) to run this model.
 
 ```bash
 $ cd TO/THE/PATH/WHERE/YOU/KEEP/NN-crystal-synthesizability-predictor
@@ -89,20 +91,20 @@ Includes two major components to prepare the positive and the negatice classes.
     
 > **filter_cif_with_partial_occupancy:** It goes over the COD crystals and saves a list of structures with a partial occupancy to supercell_list.sh
     
-> **cif2chunk:** It get a directory of CIF files and it parses all the CIF to ASE Atoms Object and save them
+> **cif2chunk:** It get a directory of CIF files and it parses all the CIF to ASE Atoms-Object and save them
     into chunks of pickle data sets.
     
-> **cif_chunk2mat:** It converts a list of chunks of CIF files to SPARSE 3D cubic images of crystals.
+> **cif_chunk2mat:** It converts a list of chunks of CIF files to sparse 3D cubic crystal images.
 
 > **cif_chunk2mat_helper:** The helper function to cif_chunk2mat for parallelization.
 
 > **load_data:** Loads the crystal space representation of whole database and prepares test and train sets, but it doesn't do
-    any processes like SS, PCA or Over-Sampling
+    any processes like SS, PCA or over-sampling.
 
-> **data_preparation:** Loads the train and test sets and it applies Standard Scalar, PCA and OverSampling.
+> **data_preparation:** Loads the train and test sets and it applies SS, PCA and over sampling.
 
 * __cspd_anomaly_generator.py__
-> **list_all_the_formulas:** Creating a table of all the compositions available in the Literature and their number of repetitions
+> **list_all_the_formulas:** Creating a table of all the compositions available in the literature and their number of repetitions
     (The mat2vec package borrowed from [here](https://github.com/materialsintelligence/mat2vec))
     
 > **anomaly_gen_lit_based:** Creates crystal anomaly by generating hypothetical structures of well studied crystals and removing known structure
