@@ -32,12 +32,12 @@ from config import *
 
 # data_path = '/Volumes/ALI - WD/Data/'
 # data_path = expanduser('~/Data/')
-if not exists(data_path):
-    data_path = '/oasis/scratch/comet/adavari/temp_project/home/adavari/Downloads/'
-    if not exists(data_path):
-        data_path = expanduser('/media/ali/Data/')
-        if not exists(data_path + 'cod/'):
-            raise FileNotFoundError('Couldn''t find any database.')
+# if not exists(data_path):
+#     data_path = '/oasis/scratch/comet/adavari/temp_project/home/adavari/Downloads/'
+#     if not exists(data_path):
+#         data_path = expanduser('/media/ali/Data/')
+#         if not exists(data_path + 'cod/'):
+#             raise FileNotFoundError('Couldn''t find any database.')
 print('Data path = ', data_path, flush=True)
 
 tot_cpu = os.cpu_count()
