@@ -3,10 +3,31 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import matplotlib.font_manager
-matplotlib.font_manager._rebuild()
+from matplotlib.ticker import MultipleLocator, AutoMinorLocator
+import os
+
+try:
+    matplotlib.font_manager._rebuild()
+except AttributeError:
+    pass
 
 
-def plot_format(size=None, font_size=9, nrows=1, ncols=1, palette=None, equal_axis=False):
+# from matplotlib import font_manager
+# font_dir = os.path.expanduser('~/Apps/fonts/Helvetica Family/')
+# font_files = font_manager.findSystemFonts(fontpaths=font_dir)
+# for font_file in font_files:
+#     font_manager.fontManager.addfont(font_file)
+
+# from matplotlib import font_manager
+# font_dir = os.path.expanduser('~/Apps/fonts/Helvetica Family/')
+#
+# Helvetica = font_manager.FontEntry(
+#     fname=font_dir + 'Helvetica-Normal.ttf',
+#     name='Helvetica')
+# font_manager.fontManager.ttflist.insert(0, Helvetica)
+
+def plot_format(size=None, font_size=9, nrows=1, ncols=1, palette=None, equal_axis=False, sharex=False,
+                flip_size=False):
     # f, ax, fs = Plots.plot_format()
     # colors: https://python-graph-gallery.com/100-calling-a-color-with-seaborn/
     # Pallets https://chrisalbon.com/python/data_visualization/seaborn_color_palettes/
@@ -32,6 +53,16 @@ def plot_format(size=None, font_size=9, nrows=1, ncols=1, palette=None, equal_ax
         if equal_axis:
             golden_ratio = 1
         size = (size, size * golden_ratio * (nrows / ncols))
+    if flip_size:
+        size = (size[1], size[0])
+
+    # from matplotlib import font_manager
+    # font_dir = os.path.expanduser('~/Apps/fonts/Helvetica Family/')
+    # Helvetica = font_manager.FontEntry(
+    #     fname=font_dir + 'Helvetica-Normal.ttf',
+    #     name='Helvetica')
+    # font_manager.fontManager.ttflist.insert(0, Helvetica)
+    # matplotlib.rc('font', family=Helvetica.name)
 
     plt.rcParams['font.size'] = font_size
     matplotlib.rc('font', family='sans-serif')
@@ -62,7 +93,11 @@ def plot_format(size=None, font_size=9, nrows=1, ncols=1, palette=None, equal_ax
     matplotlib.rcParams['lines.linewidth'] = 2
     # matplotlib.rcParams['lines.color'] = 'r'
 
-    f, ax = plt.subplots(figsize=(size[0] / 100 * 3.93701, size[1] / 100 * 3.93701), nrows=nrows, ncols=ncols)
+    # sns.set_style("whitegrid")
+    # sns.set_context('paper')
+
+    f, ax = plt.subplots(figsize=(size[0] / 100 * 3.93701, size[1] / 100 * 3.93701), nrows=nrows, ncols=ncols,
+                         sharex=sharex)
     # sns.set_style("darkgrid")
     # sns.set(style="whitegrid")
     # sns.set_context("paper")
@@ -109,11 +144,12 @@ def plot_tick_formatter(ax=None, axis='y', style='sci'):
     if ax is None:
         ax = plt.gca()
     if style == 'comma':
-        if axis == 'y':
-            # instead of plt.gca().xaxis. use: ax.get_xaxis()
-            ax.get_yaxis().set_major_formatter(plt.matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
-        if axis == 'x':
-            ax.get_xaxis().set_major_formatter(plt.matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
+        ax.__dict__[f'{axis}axis'].set_major_formatter(plt.matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
+        # if axis == 'y':
+        #     # instead of plt.gca().xaxis. use: ax.get_xaxis()
+        #     ax.__dict__[f'{axis}axis'].set_major_formatter(plt.matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
+        # if axis == 'x':
+        #     ax.get_xaxis().set_major_formatter(plt.matplotlib.ticker.StrMethodFormatter('{x:,.0f}'))
     if style == 'sci':
         ax.ticklabel_format(axis=axis, style="sci", scilimits=(0, 0))
         # import matplotlib.ticker as mtick
@@ -176,7 +212,7 @@ def add_hash_pattern(ax, pattern='//'):
         bar.set_hatch(pattern)
 
 
-def annotate_subplots_with_abc(axs, x=-0.2, y=1.1, start_from=0,bigger_fonts=1):
+def annotate_subplots_with_abc(axs, x=-0.2, y=1.1, start_from=0, bigger_fonts=1):
     for n, ax in enumerate(axs):
         import string
         ax.text(x, y, f'{string.ascii_lowercase[n + start_from]})', transform=ax.transAxes,
@@ -197,8 +233,6 @@ def periodic_table_heatmap(elemental_data, cbar_label="", cbar_label_size=14,
                            ax=None, fig=None, not_show_blank_value=False,
                            ):
     """
-    # borrowed and modified from PYMATGEN: https://pymatgen.org/pymatgen.core.periodic_table.html
-
     A static method that generates a heat map overlayed on a periodic table.
 
     Args:
@@ -309,10 +343,29 @@ def choice_of_markers():
     all_shapes = list(markers.MarkerStyle.markers.keys())
     plt.figure()
     for i in range(len(all_shapes)):
-        plt.scatter(i,i, marker=all_shapes[i])
+        plt.scatter(i, i, marker=all_shapes[i])
     plt.show()
 
     print('End markers')
+
+
+def ax_tick_locator(ax, axis='x', major_period=None, minor_period=None):
+    if major_period is not None:
+        ax.__dict__[f'{axis}axis'].set_major_locator(MultipleLocator(major_period))
+    if minor_period is not None:
+        ax.__dict__[f'{axis}axis'].set_minor_locator(MultipleLocator(minor_period))
+
+
+def change_bar_width(ax, new_value):
+    for patch in ax.patches:
+        current_width = patch.get_width()
+        diff = current_width - new_value
+
+        # we change the bar width
+        patch.set_width(new_value)
+
+        # we recenter the bar
+        patch.set_x(patch.get_x() + diff * .5)
 
 
 # sns.distplot(mp,
@@ -331,6 +384,5 @@ clf_names = {'MLPClassifier': 'Neural network',
              'RandomForestClassifier': 'Random forest',
              'BaggingClassifier': "SVM-B"}
 
-
-if __name__=='__main__':
+if __name__ == '__main__':
     choice_of_markers()
