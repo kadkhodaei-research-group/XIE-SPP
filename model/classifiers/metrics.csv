@@ -1,5 +1,0 @@
-,Classifier,Set,comp,val
-0,Random Forest,Test,400,0.9772811340731797
-1,Random Forest,Train,400,1.0
-2,Neural Network,Test,400,0.9739890395439799
-3,Neural Network,Train,400,0.9946511374517931
