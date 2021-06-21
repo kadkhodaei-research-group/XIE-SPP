@@ -1,7 +1,7 @@
 import os
 
 # Your prefered data path
-data_path = os.path.expanduser('~/Data/syn')
+data_path = os.path.expanduser('Data/')
 local_data_path = os.path.expanduser('~/Local_Data/syn')
 
 default_super_cell_executable = None
