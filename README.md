@@ -54,7 +54,7 @@ Output:
 ~~~
 Evaluation: (Input can be CIF files or ASE Atoms Objects)
 ~~~python
-synthesizability.synthesizability_predictor(sample)
+synthesizability.synthesizability_predictor(samples)
 ~~~
 
 The output is the synthesizability likelihood of the input list:
