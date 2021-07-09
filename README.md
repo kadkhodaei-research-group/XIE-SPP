@@ -1,7 +1,7 @@
 # Neural Network Crystal Synthesizability Predictor (NNCSP)
 
 ![https://creativecommons.org/licenses/by-nd/4.0/](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
-
+[LICENSE](https://creativecommons.org/licenses/by-nd/4.0/)
 ## 1. Abstract
 
 Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern crystalline materials synthesis. In this work, we convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by chemical species and electronegativity and use them for training a deep-network convolutional. We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials embedded in the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirms the validity of our model.
@@ -41,6 +41,27 @@ python setup.py install
 
 
 ## 3. Using the model
+Loading the model:
+~~~python
+from synthesizability import synthesizability
+samples = synthesizability.get_test_samples('GaN')
+samples
+~~~
+Output:
+~~~
+['NN-crystal-synthesizability-predictor/finalized_results/explore_structures/cif/GaN/GaN_9.cif',
+ 'NN-crystal-synthesizability-predictor/finalized_results/explore_structures/cif/GaN/GaN_12.cif']
+~~~
+Evaluation: (Input can be CIF files or ASE Atoms Objects)
+~~~python
+synthesizability.synthesizability_predictor(sample)
+~~~
+
+The output is the synthesizability likelihood of the input list:
+~~~
+2/2 [==============================] - 2s 783ms/step
+array([0.00200533, 0.9643494 ], dtype=float32)
+~~~
 
 ## 4. Reproducibility
 ### 4.1 Unpacking the data files
