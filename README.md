@@ -1,4 +1,4 @@
-# Neural Network Crystal Synthesizability Predictor (NNCSP)
+# XIE-SPP: Crystal Image Encoder for Synthesis & Property Prediction
 
 ![https://creativecommons.org/licenses/by-nd/4.0/](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
 [LICENSE](https://creativecommons.org/licenses/by-nd/4.0/)
