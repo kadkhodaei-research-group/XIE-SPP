@@ -2,6 +2,9 @@
 
 ![https://creativecommons.org/licenses/by-nd/4.0/](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
 [LICENSE](https://creativecommons.org/licenses/by-nd/4.0/)
+
+This code has been developed by Ali Davariashtiyani. 
+
 ## 1. Abstract
 
 Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern crystalline materials synthesis. In this work, we convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by chemical species and electronegativity and use them for training a deep-network convolutional. We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials embedded in the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirms the validity of our model.
