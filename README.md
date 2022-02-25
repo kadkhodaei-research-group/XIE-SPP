@@ -5,9 +5,9 @@
 
 This code has been developed by Ali Davariashtiyani. 
 
-## 1. Abstract
+## 1. Reference
 
-Predicting the synthesizability of hypothetical crystals has proven to be challenging due to the wide range of parameters that govern crystalline materials synthesis. In this work, we convert the atomic structures of known synthesized or observed crystals in databases into three-dimensional pixel-wise images color-coded by chemical species and electronegativity and use them for training a deep-network convolutional. We extract the latent features of synthesizability hidden in structural and chemical arrangements of crystalline materials embedded in the auto-encoder. The accurate classification of materials into synthesizable crystals vs. crystal anomalies based on these features across a broad range of crystal structure types and chemical compositions confirms the validity of our model.
+Davariashtiyani, A., Kadkhodaie, Z. & Kadkhodaei, S. Predicting synthesizability of crystalline materials via deep learning. *Commun Mater* **2**, 115 (2021). https://doi.org/10.1038/s43246-021-00219-x
 
 ## 2. Installation
 Tested on Ubuntu 20.04
@@ -99,3 +99,4 @@ Run the entire [positive_data_preparation.ipynb](https://github.com/kadkhodaei-r
 ### 4.4 Re-training the models
 1. To re-train the CNN visit: [train_cnn_d9_encoder_1_r3.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cnn_d9_encoder_1_r3.ipynb)
 2. To re-train the CAE-MLP visit: [train_cae_mlp_d9_encoder_9.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cae_mlp_d9_encoder_9.ipynb)
+
