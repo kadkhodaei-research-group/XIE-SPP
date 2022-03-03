@@ -7,6 +7,8 @@ This code has been developed by Ali Davariashtiyani.
 
 ## 1. Reference
 
+Please cite the following paper if you use any part of our code and data: 
+
 Davariashtiyani, A., Kadkhodaie, Z. & Kadkhodaei, S. Predicting synthesizability of crystalline materials via deep learning. *Commun Mater* **2**, 115 (2021). https://doi.org/10.1038/s43246-021-00219-x
 
 ## 2. Installation
