@@ -21,7 +21,7 @@ cd [/navigate/to/directory/]
 
 Cloning the repository and entering the directory:
 ~~~sh
-git clone https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor.git
+git clone https://github.com/kadkhodaei-research-group/XIE-SPP.git
 cd NN-crystal-synthesizability-predictor/
 ~~~
 
