@@ -22,7 +22,7 @@ cd [/navigate/to/directory/]
 Cloning the repository and entering the directory:
 ~~~sh
 git clone https://github.com/kadkhodaei-research-group/XIE-SPP.git
-cd NN-crystal-synthesizability-predictor/
+cd XIE-SPP/
 ~~~
 
 We highly encourage you to use a [conda envirenment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). If you don't have conda installed on your machine, you can skip this step:
@@ -39,7 +39,7 @@ conda install -c anaconda keras-gpu -y
 conda install -c anaconda keras -y
 ~~~
 
-Installing the Synthesizability Predictor (NNCSP) package and dependencies:
+Installing the Synthesizability Predictor (XIE-SPP) package and dependencies:
 ~~~sh
 python setup.py install
 ~~~
@@ -54,8 +54,8 @@ samples
 ~~~
 Output:
 ~~~
-['NN-crystal-synthesizability-predictor/finalized_results/explore_structures/cif/GaN/GaN_9.cif',
- 'NN-crystal-synthesizability-predictor/finalized_results/explore_structures/cif/GaN/GaN_12.cif']
+['XIE-SPP/finalized_results/explore_structures/cif/GaN/GaN_9.cif',
+ 'XIE-SPP/finalized_results/explore_structures/cif/GaN/GaN_12.cif']
 ~~~
 Evaluation: (Input can be CIF files or ASE Atoms Objects)
 ~~~python
