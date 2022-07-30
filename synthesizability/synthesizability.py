@@ -145,3 +145,11 @@ def tf_mutter():
 def get_test_samples(samples='GaN'):
     import glob
     return glob.glob(rep_dir + f'/finalized_results/explore_structures/cif/{samples}/*.cif')
+
+rep_dir = "/Users/ali/GitHub/XIE-SPP"
+
+rep_dir = "/Users/ali/GitHub/XIE-SPP"
+
+rep_dir = "/Users/ali/GitHub/XIE-SPP"
+
+rep_dir = "/Users/ali/GitHub/XIE-SPP"
