@@ -17,7 +17,7 @@ file1.close()
 
 setup(
     name='synthesizability',
-    version='1.0.0',
+    version='1.0.5',
     packages=find_packages(),
     # packages=['synthesizability'],
     # package_dir={'synthesizability': './'},
