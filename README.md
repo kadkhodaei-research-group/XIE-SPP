@@ -48,7 +48,7 @@ python setup.py install
 ## 3. Using the model
 Loading the model:
 ~~~python
-from synthesizability import synthesizability
+from xiespp import synthesizability
 samples = synthesizability.get_test_samples('GaN')
 samples
 ~~~
