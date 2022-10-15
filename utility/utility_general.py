@@ -31,16 +31,6 @@ from collections.abc import Iterable
 from config import *
 import config
 
-# data_path = '/Volumes/ALI - WD/Data/'
-# data_path = expanduser('~/Data/')
-if not exists(data_path):
-    data_path = '/oasis/scratch/comet/adavari/temp_project/home/adavari/Downloads/'
-    if not exists(data_path):
-        data_path = expanduser('/media/ali/Data/')
-        if not exists(data_path + 'cod/'):
-            print('Couldn''t find any database.')
-# print('Data path = ', data_path, flush=True)
-
 tot_cpu = os.cpu_count()
 if os.getenv('SLURM_NTASKS_PER_NODE') is not None:
     tot_cpu = int(os.getenv('SLURM_NTASKS_PER_NODE'))

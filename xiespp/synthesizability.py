@@ -146,10 +146,54 @@ def get_test_samples(samples='GaN'):
     import glob
     return glob.glob(rep_dir + f'/finalized_results/explore_structures/cif/{samples}/*.cif')
 
-rep_dir = "/Users/ali/GitHub/XIE-SPP"
+rep_dir = './'
+# from importlib import resources
+# rep_dir = resources.path(package=synthesizabliity, resource="").__enter__()
+# rep_dir = "/Users/ali/GitHub/XIE-SPP"
 
-rep_dir = "/Users/ali/GitHub/XIE-SPP"
 
-rep_dir = "/Users/ali/GitHub/XIE-SPP"
+if __name__ == '__main__':
+    import argparse
+    # classifier = 'cae-mlp', verbose = 1, use_multiprocessing = False, workers = 1
+    parser = argparse.ArgumentParser(description='Crystal synthsizability predicttor')
+    # parser.add_argument('--test', action='store_true', help='Run on test samples')
+    parser.add_argument('-f', '--file', type=str, help='CIF file to predict')
+    parser.add_argument('-c', '--classifier', type=str, default='cae-mlp', help='Classifier to use (cnn or cae-mlp). Default is cae-mlp')
+    parser.add_argument('-v', '--verbose', type=int, default=0, help='Verbosity level. Default is 0')
+    parser.add_argument('-m', '--multiprocessing', action='store_true', help='Use multiprocessing. Default is False')
+    parser.add_argument('-w', '--workers', type=int, default=1, help='Number of workers. Default is 1')
+    parser.add_argument('-o', '--output', type=str, help='Output file name.')
 
-rep_dir = "/Users/ali/GitHub/XIE-SPP"
+    args = parser.parse_args()
+
+    files = None
+    if args.test:
+        files = get_test_samples()
+        if len(files) == 0:
+            print('No test samples found.')
+            exit(1)
+    if args.file:
+        files = [args.file]
+    if files is None or len(files) == 0:
+        print('No CIF file was provided. Use -f or --file to provide a CIF file.')
+        exit(1)
+
+    import os
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(3)  # To mute Tensorflow warnings
+
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        output = synthesizability_predictor(
+            files,
+            classifier=args.classifier,
+            verbose=args.verbose,
+            use_multiprocessing=args.multiprocessing,
+            workers=args.workers
+        )
+    output = list(output)
+    print(output)
+    if args.output:
+        with open(args.output, 'w') as f:
+            f.write(str(output))
+    pass
