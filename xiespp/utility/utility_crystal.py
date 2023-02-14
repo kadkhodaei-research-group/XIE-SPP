@@ -1,4 +1,4 @@
-from utility.utility_general import *
+from xiespp.utility.utility_general import *
 
 
 class PeriodicTable:
@@ -71,7 +71,7 @@ class SpaceGroups:
         self.table_cod.to_csv(path)
 
 
-def run_query_on_cod(query, db_path=cod_sql_file):
+def run_query_on_cod(query, db_path=None):
     '''
     Examples:
 

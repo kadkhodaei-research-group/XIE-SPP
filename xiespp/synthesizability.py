@@ -3,7 +3,8 @@ import pickle
 import sys, os
 
 org_dir = os.getcwd()
-rep_dir = '.'
+rep_dir = os.path.join(os.path.dirname(__file__), '..')
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(3)  # To mute Tensorflow warnings
 
 
 def synthesizability_predictor(data, classifier='cae-mlp', verbose=1, use_multiprocessing=False, workers=1):
@@ -105,12 +106,22 @@ def synthesizability_predictor(data, classifier='cae-mlp', verbose=1, use_multip
 
     # sys.path.append(repository_path)
     tf_mutter()
-    os.chdir(rep_dir)
-    import image_generator
-    import config
-    import models
-    import ml_tools, crystals_tools
-    os.chdir(org_dir)
+    from xiespp import image_generator, config, models#, ml_tools
+
+    # Because we changed the directory of ml_tools, we need to add the path of ml_tools to the system path
+    # This is because we are loading a pickle file that uses ml_tools
+    # https: // stackoverflow.com / questions / 2121874 / python - pickling - after - changing - a - modules - directory
+    sys.path.append(__file__.replace(__file__.split('/')[-1], ""))
+    import ml_tools
+    # Check ml_tools is loaded
+    assert ml_tools, 'ml_tools is necessary for loading classifiers'
+
+    # os.chdir(rep_dir)
+    # import image_generator
+    # import config
+    # import models
+    # import ml_tools, crystals_tools
+    # os.chdir(org_dir)
     from tensorflow.keras.models import load_model
 
     target_col = 'img_path'
@@ -135,7 +146,9 @@ def tf_mutter():
         def deprecated(date, instructions, warn_once=True):
             def deprecated_wrapper(func):
                 return func
+
             return deprecated_wrapper
+
         from tensorflow.python.util import deprecation
         deprecation.deprecated = deprecated
     except ImportError:
@@ -146,19 +159,20 @@ def get_test_samples(samples='GaN'):
     import glob
     return glob.glob(rep_dir + f'/finalized_results/explore_structures/cif/{samples}/*.cif')
 
-rep_dir = './'
+
+# rep_dir = './'
 # from importlib import resources
-# rep_dir = resources.path(package=synthesizabliity, resource="").__enter__()
+# rep_dir = resources.path(package=synthesizability, resource="").__enter__()
 # rep_dir = "/Users/ali/GitHub/XIE-SPP"
-
-
-if __name__ == '__main__':
+def main():
     import argparse
+
     # classifier = 'cae-mlp', verbose = 1, use_multiprocessing = False, workers = 1
-    parser = argparse.ArgumentParser(description='Crystal synthsizability predicttor')
-    # parser.add_argument('--test', action='store_true', help='Run on test samples')
+    parser = argparse.ArgumentParser(description='Crystal synthesizability predictor')
+    parser.add_argument('--test', action='store_true', help='Run on test samples')
     parser.add_argument('-f', '--file', type=str, help='CIF file to predict')
-    parser.add_argument('-c', '--classifier', type=str, default='cae-mlp', help='Classifier to use (cnn or cae-mlp). Default is cae-mlp')
+    parser.add_argument('-c', '--classifier', type=str, default='cae-mlp',
+                        help='Classifier to use (cnn or cae-mlp). Default is cae-mlp')
     parser.add_argument('-v', '--verbose', type=int, default=0, help='Verbosity level. Default is 0')
     parser.add_argument('-m', '--multiprocessing', action='store_true', help='Use multiprocessing. Default is False')
     parser.add_argument('-w', '--workers', type=int, default=1, help='Number of workers. Default is 1')
@@ -172,6 +186,7 @@ if __name__ == '__main__':
         if len(files) == 0:
             print('No test samples found.')
             exit(1)
+        print(f'Running on test samples: {files}')
     if args.file:
         files = [args.file]
     if files is None or len(files) == 0:
@@ -179,9 +194,11 @@ if __name__ == '__main__':
         exit(1)
 
     import os
+
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(3)  # To mute Tensorflow warnings
 
     import warnings
+
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         output = synthesizability_predictor(
@@ -196,4 +213,9 @@ if __name__ == '__main__':
     if args.output:
         with open(args.output, 'w') as f:
             f.write(str(output))
+    exit(0)
+
+
+if __name__ == '__main__':
+    main()
     pass

@@ -1,5 +1,5 @@
-import utility.util_plot as Plots
-from utility.utility_general import *
+import xiespp.utility.util_plot as Plots
+from xiespp.utility.utility_general import *
 import seaborn as sns
 from sklearn.metrics import accuracy_score
 

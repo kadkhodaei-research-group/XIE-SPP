@@ -1,9 +1,11 @@
 from keras.layers import Input, Dense, Conv2D, MaxPooling2D, UpSampling2D, BatchNormalization, Activation
-
-from keras.models import Input, Model
+try:
+    from keras.models import Input, Model
+except ImportError:
+    from tensorflow.python.keras.models import Input, Model
 from keras.layers import Conv3D, Conv2D, MaxPooling2D
 from keras.layers import MaxPooling3D, UpSampling3D
-from utility.util_tf import tf_shut_up
+from xiespp.utility.util_tf import tf_shut_up
 from keras import regularizers
 from keras import layers
 from keras.models import Sequential

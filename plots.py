@@ -1,11 +1,9 @@
-from utility import util_plot
-from utility import util_plot as Plots
-from utility.util_plot import *
+from xiespp.utility import util_plot, util_plot as Plots
+from xiespp.utility.util_plot import *
 from ase.formula import Formula
-from utility.utility_general import *
+from xiespp.utility.utility_general import *
 
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
-from matplotlib.ticker import FormatStrFormatter, StrMethodFormatter
+from matplotlib.ticker import StrMethodFormatter
 
 
 def literature_plot(save_plot=True):
@@ -83,8 +81,7 @@ def literature_plot(save_plot=True):
 def roc_plot(save_plot=True):
     # ###################### Preparation
 
-    from sklearn.metrics import accuracy_score, classification_report, roc_auc_score, \
-        roc_curve, auc
+    from sklearn.metrics import accuracy_score, classification_report, roc_curve, auc
 
     cnn_dir = 'finalized_results/cnn-3-13-7-over'
     mlp_dir = 'finalized_results/cae-mlp-3-13-7-over'
@@ -118,7 +115,7 @@ def roc_plot(save_plot=True):
 
         best_threshold = 0.5
 
-        from sklearn.metrics import confusion_matrix, f1_score, precision_recall_curve
+        from sklearn.metrics import confusion_matrix
         y_pred = predictions[clf_name]['yp_label']
         acc = accuracy_score(y, y_pred)
 

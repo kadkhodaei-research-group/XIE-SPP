@@ -1,6 +1,6 @@
-from utility.utility_general import *
+from xiespp.utility.utility_general import *
 from AtomicStructureGenerator.cspd import atomic_structure_generator
-from utility.utility_crystal import run_query_on_cod, SpaceGroups
+from xiespp.utility.utility_crystal import run_query_on_cod, SpaceGroups
 from config import cspd_file
 
 

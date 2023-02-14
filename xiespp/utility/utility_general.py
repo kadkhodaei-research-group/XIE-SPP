@@ -1,3 +1,4 @@
+# Util general
 import warnings
 
 warnings.filterwarnings('ignore', category=FutureWarning)
@@ -28,8 +29,7 @@ import linecache
 import pandas as pd
 from collections.abc import Iterable
 # import utility.util_plot as Plots
-from config import *
-import config
+# from xiespp.config import *
 
 tot_cpu = os.cpu_count()
 if os.getenv('SLURM_NTASKS_PER_NODE') is not None:
@@ -44,8 +44,8 @@ def exists(path):
 
 
 def fix_path(filename):
-    if (not os_exists(filename)) and ('results' in filename) and (os_exists(f'{data_path}cod/{filename}')):
-        filename = f'{data_path}cod/{filename}'
+    # if (not os_exists(filename)) and ('results' in filename) and (os_exists(f'{data_path}cod/{filename}')):
+    #     filename = f'{data_path}cod/{filename}'
     return filename
 
 
@@ -93,7 +93,7 @@ def memory_info(stop=True, stop_limit=10000):
 
 def list_all_files(path, pattern='[0-9.]*.pkl', recursive=True, shuffle=False, error=True, random_seed=0):
     # list_all_files(data_path + 'cod/battery/cif/', pattern=r'[0-9]*/*.cif')
-    if path[-1] is not '/':
+    if path[-1] != '/':
         path += '/'
     path = fix_path(path)
     if not exists(path):
@@ -187,7 +187,7 @@ def bash_cd(command, cd):
 def run_bash_commands(command, wait=True, verbose=False, path=''):
     if verbose:
         command = 'set -x\n' + command
-    if path is not '':
+    if path != '':
         command = bash_cd(command, path)
     process = subprocess.Popen(command,
                                stdout=subprocess.PIPE,

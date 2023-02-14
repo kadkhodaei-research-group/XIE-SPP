@@ -1,5 +1,5 @@
-from utility.utility_general import *
-import utility.util_plot
+from xiespp.utility.utility_general import *
+# import utility.util_plot
 
 
 def plot_roc_curve(y, yp, ax=None, show_plot=False, plot_roc=True, plot_dist=True):

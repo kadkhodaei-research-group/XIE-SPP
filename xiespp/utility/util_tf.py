@@ -7,8 +7,8 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import MaxNLocator
-from utility.utility_general import *
-
+# from utility.utility_general import *
+# from xiespp.utility.utility_general import *
 
 def tf_shut_up():
     """
@@ -174,6 +174,7 @@ class BatchLogger(tf.keras.callbacks.Callback):
         path = self.path
         if not self.path[-4:] == '.csv':
             path = path + '/batches.csv'
+        import pandas as pd
         pd.DataFrame({'epoch': self.epochs, 'batch': self.batches, 'loss': self.loss})\
             .to_csv(path, index=False)
 
