@@ -30,6 +30,7 @@ setup(
     # long_description=open('README.md').read(),
     python_requires='>=3.7',
     install_requires=install_requires,  # TODO: accept different versions of tensorflow
+    # https://stackoverflow.com/questions/49222824/make-an-either-or-distinction-for-install-requires-in-setup-py
     entry_points={
         'console_scripts': [
             'synthesizability = xiespp.synthesizability:main'
