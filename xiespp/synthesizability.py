@@ -2,9 +2,10 @@ import pandas as pd
 import pickle
 import sys, os
 
+
 org_dir = os.getcwd()
 rep_dir = os.path.join(os.path.dirname(__file__), '..')
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(3)  # To mute Tensorflow warnings
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(3)  # To mute Tensorflow warnings
 
 
 def synthesizability_predictor(data, classifier='cae-mlp', verbose=1, use_multiprocessing=False, workers=1):
@@ -137,11 +138,21 @@ def synthesizability_predictor(data, classifier='cae-mlp', verbose=1, use_multip
 
 
 def tf_mutter():
+    # import silence_tensorflow
+    # silence_tensorflow.silence_tensorflow()
+    # import silence_tensorflow.auto
     try:
         import os
+        os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
         from tensorflow import logging, compat
+        logging.set_verbosity(logging.ERROR)
+
         compat.v1.logging.set_verbosity(compat.v1.logging.ERROR)
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
+        import tensorflow as tf
+        tf.autograph.set_verbosity(1)
+        tf.get_logger().setLevel("ERROR")
 
         def deprecated(date, instructions, warn_once=True):
             def deprecated_wrapper(func):
@@ -165,6 +176,8 @@ def get_test_samples(samples='GaN'):
 # rep_dir = resources.path(package=synthesizability, resource="").__enter__()
 # rep_dir = "/Users/ali/GitHub/XIE-SPP"
 def main():
+
+    tf_mutter()
     import argparse
 
     # classifier = 'cae-mlp', verbose = 1, use_multiprocessing = False, workers = 1
@@ -193,9 +206,8 @@ def main():
         print('No CIF file was provided. Use -f or --file to provide a CIF file.')
         exit(1)
 
-    import os
-
-    os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(3)  # To mute Tensorflow warnings
+    # import os
+    # os.environ['TF_CPP_MIN_LOG_LEVEL'] = str(3)  # To mute Tensorflow warnings
 
     import warnings
 
@@ -216,6 +228,7 @@ def main():
     exit(0)
 
 
+tf_mutter()
 if __name__ == '__main__':
     main()
     pass
