@@ -72,10 +72,8 @@ array([0.00200533, 0.9643494 ], dtype=float32)
 
 ## 4. Reproducibility
 ### 4.1 Unpacking the data files
-Joining the tar files:
-~~~sh
-cat Data.parts.a* > Data.joined.tar.gz
-~~~
+Data files available at [https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3](https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3)
+
 Untarring the files to the data folder:
 ~~~sh
 tar -xvzf Data.joined.tar.gz
