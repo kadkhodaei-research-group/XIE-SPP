@@ -35,7 +35,7 @@ conda create -n synthesizability python=3.7.3 -y
 conda activate synthesizability
 ~~~
 
-Installing TensorFlow:
+Installing TensorFlow on Ubuntu:
 ~~~sh
 ***Installing the GPU version:
 conda install -c anaconda keras-gpu -y
@@ -43,13 +43,23 @@ conda install -c anaconda keras-gpu -y
 conda install -c anaconda keras -y
 ~~~
 
-Installing the Synthesizability Predictor (XIE-SPP) package and dependencies:
+Installing TensorFlow on Mac M1:
+
+*miniforge3 is required.*
+~~~sh
+conda install -c apple tensorflow-deps -y
+pip install tensorflow-macos
+pip install tensorflow-metal
+~~~
+
+Installing the Crystal Image Encoder for Synthesis & Property Prediction (XIE-SPP) package and it's dependencies:
 ~~~sh
 python setup.py install
 ~~~
 
 
 ## 3. Using the model
+### 3.1 Using the model for synthesizability prediction (Version 1)
 Loading the model:
 
 ~~~python
@@ -73,6 +83,39 @@ The output is the synthesizability likelihood of the input list:
 ~~~
 2/2 [==============================] - 2s 783ms/step
 array([0.00200533, 0.9643494 ], dtype=float32)
+~~~
+
+### 3.2 Using the model for synthesizability prediction (Version 2)
+~~~sh
+from xiespp import synthesizability, get_test_samples
+# or 
+# from xiespp import synthesizability_2 as synthesizability
+
+samples = get_test_samples('CSi')
+# The input to the model can in formats like: CIF, POSCAR, PyMatGen Structure, ASE Atoms
+model = synthesizability.SynthesizabilityPredictor()
+model.predict(samples)
+~~~
+
+### 3.3 Using the model for formation energy prediction
+~~~sh
+from xiespp import formation_energy, get_test_samples
+model = formation_energy.FormationEnergyPredictor()
+
+# As an example we take the samples from MP database
+from mp_api.client import MPRester
+api_key = '__YOUR_API_KEY__'
+mpr = MPRester(api_key)
+search = mpr.summary.search(chemsys="Si-O")
+data_input = search[:10]
+
+# As practice instead of directly passing the data to the model we first generate the Image Generator Object
+gen = formation_energy.prepare_data(
+    data_input=data_input, 
+    # input_format= 'vasp', # Use this if the format of the file is not CIF file
+)
+model = formation_energy.FormationEnergyPredictor()
+yp = model.predict(gen, return_all_ensembles=True)
 ~~~
 
 ## 4. Reproducibility

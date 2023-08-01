@@ -5,4 +5,4 @@ from . import synthesizability_1
 from . import synthesizability_2
 from . import synthesizability_2 as synthesizability
 from . synthesizability_1.synthesizability import get_test_samples
-from .params import __version__
+from ._params import __version__

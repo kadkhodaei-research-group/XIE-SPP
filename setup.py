@@ -1,13 +1,16 @@
 from setuptools import setup, find_packages
 import os
 from pathlib import Path
-from xiespp.params import __version__ as version
 
+params = {}
+with open("xiespp/_params.py") as fp:
+    exec(fp.read(), params)
 
-install_requires = []  # Here we'll get: ["gunicorn", "docutils>=0.3", "lxml==0.5a7"]
+install_requires = []
 if os.path.isfile('requirements.txt'):
     with open('requirements.txt') as f:
         install_requires = f.read().splitlines()
+install_requires = [r for r in install_requires if not r.startswith('#')]
 
 
 # data_dir = os.path.join('finalized_results')
@@ -24,7 +27,7 @@ def package_files(directory, pattern='**/*'):
 setup(
     name='xiespp',
     # data_files=datafiles,
-    version=version,
+    version=params['__version__'],
     packages=find_packages(),
     package_data={
         'xiespp.formation_energy': ['model/*'],
@@ -39,14 +42,12 @@ setup(
     license='CC BY-ND 4.0',
     author='Ali Davariashtiyani',
     author_email='adavar2@uic.edu, ',
-    code_supervisor='Sara Kadkhodaei',
-    code_supervisor_email='sarakad@uic.edu',
+    # code_supervisor='Sara Kadkhodaei',
+    # code_supervisor_email='sarakad@uic.edu',
     description='XIE-SPP: Crystal Image Encoder for Synthesis & Property Prediction',
     keywords='synthesis synthesizability crystal formation energy',
-    # long_description=open('README.md').read(),
     python_requires='>=3.7',
-    # install_requires=install_requires,  # TODO: accept different versions of tensorflow
-    # https://stackoverflow.com/questions/49222824/make-an-either-or-distinction-for-install-requires-in-setup-py
+    install_requires=install_requires,
     entry_points={
         'console_scripts': [
             'synthesizability = xiespp.main:main_synthesizability',

@@ -1,3 +1,6 @@
 .idea/*
 .DS_Store
 *.cpython*
+build/*
+dist/*
+*.egg-info/*
