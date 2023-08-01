@@ -13,6 +13,8 @@ Please cite the following paper if you use any part of our code or data:
 
 Davariashtiyani, A., Kadkhodaie, Z. & Kadkhodaei, S. Predicting synthesizability of crystalline materials via deep learning. *Commun Mater* **2**, 115 (2021). https://doi.org/10.1038/s43246-021-00219-x
 
+The data files for this paper is available at [https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3](https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3)
+
 ## 2. Installation
 Tested on Ubuntu 20.04
 
@@ -49,8 +51,11 @@ python setup.py install
 
 ## 3. Using the model
 Loading the model:
+
 ~~~python
-from xiespp import synthesizability
+
+from xiespp.synthesizability_1 import synthesizability
+
 samples = synthesizability.get_test_samples('GaN')
 samples
 ~~~

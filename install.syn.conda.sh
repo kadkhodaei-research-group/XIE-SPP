@@ -18,7 +18,6 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   source ~/.bash_profile
   conda activate $CONDA_ENV_NAME
   # conda install -c conda-forge keras=2.4.3 tensorflow=2.4.1 -y
-  
   # conda install -c conda-forge keras=2.4.3 tensorflow=2.4.1 -y
   conda install -c apple tensorflow-deps -y
   pip install tensorflow-macos
@@ -47,6 +46,6 @@ python setup.py install
 # Usage:
 # source synthesizability.conda.sh
 # conda activate $CONDA_ENV_NAME
-# which synthesizability  # Executable path
-# synthesizability --help
-# synthesizability --test
+# which xiespp_synthesizability  # Executable path
+# xiespp_synthesizability --help
+# xiespp_synthesizability --test -v

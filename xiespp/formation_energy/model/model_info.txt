@@ -1,0 +1,8 @@
+path = '../results/train_improvement_9/train_15lm-6sk-t1(model7-all-mp)'
+
+channels=['atomic_number', 'group', 'period'],
+box=CVR.BoxImage(box_size=70 // 4, n_bins=128 // 4),
+filling='fill-cut',
+y='formation_energy_per_atom',
+random_rotation=True,
+batch_size=32,
