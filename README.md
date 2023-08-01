@@ -86,6 +86,8 @@ array([0.00200533, 0.9643494 ], dtype=float32)
 ~~~
 
 ### 3.2 Using the model for synthesizability prediction (Version 2)
+We highly encourage the use of this version of the model. 
+This version is more robust, accurate and faster than the previous version.
 ~~~sh
 from xiespp import synthesizability, get_test_samples
 # or 
