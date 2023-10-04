@@ -1,5 +1,5 @@
 # from .generator import ImageGeneratorKeras
-from .. import CVR
+from .generator import ImageGeneratorKeras
 
 
 def predict(model,
@@ -61,7 +61,7 @@ def prepare_data(
         image_params=None,
         input_format=None,
         verbose=True,
-) -> CVR.ImageGeneratorKeras:
+) -> ImageGeneratorKeras:
     """
     Prepares data for prediction. Makes sure that the data is in CVR ImageGeneratorKeras object.
     :param data_input: List of files - ASE atomic objects - ThreeDImages - PyMatGen Structure objects
@@ -75,8 +75,8 @@ def prepare_data(
         image_params = image_params.copy()
         image_params['format'] = input_format
 
-    if not isinstance(data_input, CVR.ImageGeneratorKeras):
-        data_input = CVR.ImageGeneratorKeras(
+    if not isinstance(data_input, ImageGeneratorKeras):
+        data_input = ImageGeneratorKeras(
             data_input,
             image_params=image_params,
             random_rotation=image_params.get('random_rotation', True),

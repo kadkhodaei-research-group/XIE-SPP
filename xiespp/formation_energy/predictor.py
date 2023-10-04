@@ -1,6 +1,8 @@
 # formation_energy/predictor.py
 from . import model as model_module
-from .. import CVR
+# from . import CVR
+import CVR
+import functools
 
 
 DEFAULT_RANDOM_ROTATION = True
@@ -13,6 +15,10 @@ DEFAULT_IMAGE_PARAMS = dict(
 )
 DEFAULT_BOX = CVR.BoxImage(box_size=DEFAULT_IMAGE_PARAMS['box_size'], n_bins=DEFAULT_IMAGE_PARAMS['n_bins'])
 
+prepare_data = functools.partial(
+    CVR.keras_tools.prepare_data,
+    image_params=DEFAULT_IMAGE_PARAMS,
+)
 
 class FormationEnergyPredictor(CVR.keras_tools.BasePredictor):
     """
