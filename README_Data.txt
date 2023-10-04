@@ -7,4 +7,4 @@ To prepare the data folder:
 
 Access data for reproducibility of formation energy prediction: 
 https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm
-Also the MP ids of all the sets available at: xiespp/formation_energy/data_sets/
+Also the MP ids of all the sets available at: training/formation-energy/data_sets/

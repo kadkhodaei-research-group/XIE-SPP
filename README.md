@@ -15,6 +15,11 @@ Davariashtiyani, A., Kadkhodaie, Z. & Kadkhodaei, S. Predicting synthesizability
 
 The data files for this paper is available at [https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3](https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3)
 
+
+Ali Davariashtiyani, Sara Kadkhodaei. Voxel Image of Crystals for High-Throughput Materials Screening: Formation Energy Prediction by a Deep Convolutional Network, 29 June 2023, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-3044141/v1]
+
+The data files for this paper is available at [https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm](https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm)
+
 ## 2. Installation
 Tested on Ubuntu 20.04
 
