@@ -13,10 +13,14 @@ Please cite the following paper if you use any part of our code or data:
 
 Davariashtiyani, A., Kadkhodaie, Z. & Kadkhodaei, S. Predicting synthesizability of crystalline materials via deep learning. *Commun Mater* **2**, 115 (2021). https://doi.org/10.1038/s43246-021-00219-x
 
+![Synthesizability overall framework](img/SYN_overall.jpeg)
+
 The data files for this paper is available at [https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3](https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3)
 
 
 Ali Davariashtiyani, Sara Kadkhodaei. Voxel Image of Crystals for High-Throughput Materials Screening: Formation Energy Prediction by a Deep Convolutional Network, 29 June 2023, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-3044141/v1]
+
+![Formation energy prediction overall framework](img/FE-overall.png)
 
 The data files for this paper is available at [https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm](https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm)
 
@@ -156,4 +160,8 @@ Run the entire [positive_data_preparation.ipynb](https://github.com/kadkhodaei-r
 ### 4.4 Re-training the models
 1. To re-train the CNN visit: [train_cnn_d9_encoder_1_r3.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cnn_d9_encoder_1_r3.ipynb)
 2. To re-train the CAE-MLP visit: [train_cae_mlp_d9_encoder_9.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cae_mlp_d9_encoder_9.ipynb)
+
+### 5. Crystal Voxel Representation (CVR) 3D images
+
+![Crystal Voxel Representation](img/crv-image-creation.jpeg)
 
