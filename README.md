@@ -158,10 +158,14 @@ Run the entire [positive_data_preparation.ipynb](https://github.com/kadkhodaei-r
 3. Create the image files by running [data_set_selections.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/data_set_selections.ipynb)
 
 ### 4.4 Re-training the models
-1. To re-train the CNN visit: [train_cnn_d9_encoder_1_r3.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cnn_d9_encoder_1_r3.ipynb)
-2. To re-train the CAE-MLP visit: [train_cae_mlp_d9_encoder_9.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cae_mlp_d9_encoder_9.ipynb)
+<!-- 1. To re-train the CNN visit: [train_cnn_d9_encoder_1_r3.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cnn_d9_encoder_1_r3.ipynb)
+2. To re-train the CAE-MLP visit: [train_cae_mlp_d9_encoder_9.ipynb](https://github.com/kadkhodaei-research-group/NN-crystal-synthesizability-predictor/blob/main/train_cae_mlp_d9_encoder_9.ipynb) -->
+Re-training formation energy prediction: [model7_training.ipynb](https://github.com/kadkhodaei-research-group/XIE-SPP/blob/main/training/formation-energy/training/model7_training.ipynb)
+
 
 ### 5. Crystal Voxel Representation (CVR) 3D images
+
+Image creation package: [CVR](https://github.com/kadkhodaei-research-group/XIE-SPP/tree/main/xiespp/CVR)
 
 ![Crystal Voxel Representation](img/crv-image-creation.jpeg)
 
