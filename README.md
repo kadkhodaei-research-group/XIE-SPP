@@ -3,7 +3,7 @@
 ![https://creativecommons.org/licenses/by-nd/4.0/](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
 [LICENSE](https://creativecommons.org/licenses/by-nd/4.0/)
 
-This code has been developed by Ali Davariashtiyani. 
+This code has been developed by Ali Davariashtiyani. ([LinkedIn](https://www.linkedin.com/in/davari-ali/), [Scholar](https://scholar.google.com/citations?user=4_t-DZYAAAAJ&hl=en))
 
 This code has been developed under the support of the National Science Foundation (NSF) award number DMR-2119308.
 
@@ -11,14 +11,14 @@ This code has been developed under the support of the National Science Foundatio
 
 Please cite the following paper if you use any part of our code or data: 
 
-Davariashtiyani, A., Kadkhodaie, Z. & Kadkhodaei, S. Predicting synthesizability of crystalline materials via deep learning. *Commun Mater* **2**, 115 (2021). https://doi.org/10.1038/s43246-021-00219-x
+Davariashtiyani, A., Kadkhodaie, Z. & Kadkhodaei, S. Predicting synthesizability of crystalline materials via deep learning. *Commun Mater* **2**, 115 (2021). [https://doi.org/10.1038/s43246-021-00219-x](https://doi.org/10.1038/s43246-021-00219-x)
 
 ![Synthesizability overall framework](img/SYN_overall.jpeg)
 
 The data files for this paper is available at [https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3](https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3)
 
 
-Ali Davariashtiyani, Sara Kadkhodaei. Voxel Image of Crystals for High-Throughput Materials Screening: Formation Energy Prediction by a Deep Convolutional Network, 29 June 2023, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-3044141/v1]
+Ali Davariashtiyani, Sara Kadkhodaei. Voxel Image of Crystals for High-Throughput Materials Screening: Formation Energy Prediction by a Deep Convolutional Network, 29 June 2023, PREPRINT (Version 1) available at Research Square (https://doi.org/10.21203/rs.3.rs-3044141/v1)[https://doi.org/10.21203/rs.3.rs-3044141/v1]
 
 ![Formation energy prediction overall framework](img/FE-overall.png)
 
