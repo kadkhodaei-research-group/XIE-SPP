@@ -3,7 +3,7 @@
 ![https://creativecommons.org/licenses/by-nd/4.0/](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
 [LICENSE](https://creativecommons.org/licenses/by-nd/4.0/)
 
-This code has been developed by Ali Davariashtiyani. ([LinkedIn](https://www.linkedin.com/in/davari-ali/), [Scholar](https://scholar.google.com/citations?user=4_t-DZYAAAAJ&hl=en))
+This code has been developed by **Ali Davariashtiyani**. ([LinkedIn](https://www.linkedin.com/in/davari-ali/), [Scholar](https://scholar.google.com/citations?user=4_t-DZYAAAAJ&hl=en))
 
 This code has been developed under the support of the National Science Foundation (NSF) award number DMR-2119308.
 
