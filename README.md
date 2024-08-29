@@ -1,7 +1,6 @@
 # XIE-SPP: Crystal Image Encoder for Synthesis & Property Prediction
 
-![https://creativecommons.org/licenses/by-nd/4.0/](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)
-[LICENSE](https://creativecommons.org/licenses/by-nd/4.0/)
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" alt="Creative Commons License" width="75">[LICENSE](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 
 This code has been developed by **Ali Davariashtiyani**. ([LinkedIn](https://www.linkedin.com/in/davari-ali/), [Scholar](https://scholar.google.com/citations?user=4_t-DZYAAAAJ&hl=en))
 
