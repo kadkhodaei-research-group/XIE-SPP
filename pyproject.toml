@@ -41,6 +41,7 @@ dev = [
     "ipykernel",
     "ipywidgets",
     "nbformat",
+    "pytest",
     "kaleido",
     "mp-api",
     "pymatgen",

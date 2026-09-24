@@ -1,0 +1,49 @@
+# Weekly collection of the repository traffic (clones and views).
+# GitHub only keeps 14 days of traffic data; this keeps the full history on the `traffic-stats` branch
+# (no commits to main). See the totals in the README.md of that branch.
+#
+# Setup (once): create a token with read access to this repository's administration data and save it as the
+# repository secret TRAFFIC_TOKEN (Settings -> Secrets and variables -> Actions -> New repository secret).
+#   - Fine-grained token: Repository access: only this repository; Permissions: Administration -> Read-only
+#   - or a classic token with the `repo` scope
+name: Repository traffic
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Mondays 06:00 UTC
+  workflow_dispatch:      # Manual run: Actions -> Repository traffic -> Run workflow
+
+permissions:
+  contents: write  # To push the traffic-stats branch
+
+jobs:
+  traffic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Switch to the traffic-stats branch
+        run: |
+          cp .github/scripts/traffic.py "$RUNNER_TEMP/traffic.py"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin traffic-stats; then
+            git checkout traffic-stats
+          else
+            git checkout --orphan traffic-stats
+            git rm -rf --quiet .
+          fi
+
+      - name: Collect traffic
+        env:
+          REPO: ${{ github.repository }}
+          TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: python3 "$RUNNER_TEMP/traffic.py"
+
+      - name: Commit
+        run: |
+          git add clones.csv views.csv README.md
+          git diff --cached --quiet || git commit -m "Update traffic stats"
+          git push origin traffic-stats

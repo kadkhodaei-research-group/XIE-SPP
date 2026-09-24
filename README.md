@@ -69,8 +69,16 @@ Then restart the runtime (*Runtime → Restart session*) before importing `xiesp
 - Exporting static figures (`fig.write_image(...)`, `fig.show(renderer="png")`) needs Chrome for kaleido: run `plotly_get_chrome`. Interactive figures (`fig.show()`) do not need it.
 
 ## 3. Command line interface
-After installation the `xiespp` command is available. Inputs are CIF files by default (use `--format vasp` etc. for other [ASE formats](https://wiki.fysik.dtu.dk/ase/ase/io/io.html)); `--test` runs on the example structures shipped with the package.
+After installation the `xiespp` command is available. Inputs are CIF files by default (use `--format vasp` etc. for other [ASE formats](https://wiki.fysik.dtu.dk/ase/ase/io/io.html)).
 
+Trying it on the test samples shipped with the package (`GaN` by default, `CSi` or `MoS2`):
+```sh
+xiespp synthesizability --test-samples
+xiespp synthesizability --test-samples CSi --model v1-cnn
+xiespp formation-energy --test-samples MoS2
+```
+
+Using your own structure files:
 ```sh
 # Synthesizability likelihood, version 2 (default, recommended)
 xiespp synthesizability structure1.cif structure2.cif -o synthesizability.csv
@@ -154,14 +162,22 @@ CVR.vv.voxel_interactive_plotly(array, channels=0, box_outline=True).show()
 
 Example notebooks: [example_synthesizability.ipynb](example_synthesizability.ipynb), [example_formation_energy.ipynb](example_formation_energy.ipynb), [example_cvr_images.ipynb](example_cvr_images.ipynb) (require the dev installation).
 
+### 4.5 Smoke tests
+Checks the exact recreation of the CVR images and the reproduction of the synthesizability and formation energy predictions (dev installation, ~2 min on CPU):
+```sh
+uv run pytest tests
+```
+
 ## 5. Reproducibility
 ### 5.1 Unpacking the data files
 Data files:
 - Synthesizability prediction: [https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3](https://uofi.app.box.com/s/7o39i8jt4ve7s5loo0twlub06k3d7np3)
-- Formation energy prediction: [https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm](https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm)
+- Formation energy prediction: [https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm](https://uofi.box.com/s/ka69pgrpgn9gkauz912urcurj31xmlfm).
+  The Materials Project IDs of the training, development and test sets are also available in [training/formation-energy/data_sets/](training/formation-energy/data_sets/).
 
-Untarring the files to the data folder:
+Preparing the data folder of the synthesizability prediction (joining the downloaded parts and untarring):
 ```sh
+cat Data.parts.a* > Data.joined.tar.gz
 tar -xvzf Data.joined.tar.gz
 ```
 ### 5.2 Data availability

@@ -60,7 +60,7 @@ class ImagePreprocessor:
 
         if self.verbose:
             print('Checking image requirements...', flush=True)
-        df.loc[df.index, 'is_valid'] = utg.parallel_apply(
+        df['is_valid'] = utg.parallel_apply(
             df.loc[:, 'image'], lambda x: x.check_requirements(),
             progres_bar=self.verbose,
         )

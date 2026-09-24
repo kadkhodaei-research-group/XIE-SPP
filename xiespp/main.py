@@ -14,12 +14,17 @@ from pathlib import Path
 SYN_MODELS = ['v2', 'v1-cnn', 'v1-cae-mlp']
 # Names used by the previous versions of the CLI (-c/--classifier)
 LEGACY_SYN_MODELS = {'cnn': 'v2', 'cnn-v1': 'v1-cnn', 'cae-mlp-v1': 'v1-cae-mlp'}
+TEST_SAMPLES = ['GaN', 'CSi', 'MoS2']
 
 
 def add_input_args(parser):
     parser.add_argument('files', nargs='*', help='Structure files (CIF by default)')
     parser.add_argument('-f', '--file', action='append', default=[], help=argparse.SUPPRESS)  # Legacy
-    parser.add_argument('--test', action='store_true', help='Run on the test samples shipped with the package')
+    parser.add_argument('--test-samples', nargs='?', const='GaN', choices=TEST_SAMPLES, metavar='NAME',
+                        help=f'Run on the test samples shipped with the package: {", ".join(TEST_SAMPLES)} '
+                             f'(default: GaN)')
+    parser.add_argument('--test', dest='test_samples', action='store_const', const='GaN',
+                        help=argparse.SUPPRESS)  # Legacy
     parser.add_argument('--format', type=str, default=None,
                         help='File format (ASE format names, e.g. vasp). Default: detected by ASE / CIF')
     parser.add_argument('-v', '--verbose', action='store_true', help='Print progress')
@@ -61,10 +66,10 @@ def build_parser():
 def get_files(args):
     import xiespp
     files = list(args.files) + list(args.file)
-    if args.test:
-        files += sorted(xiespp.get_test_samples())
+    if args.test_samples:
+        files += sorted(xiespp.get_test_samples(args.test_samples))
     if not files:
-        sys.exit('No input files. Pass structure files or use --test.')
+        sys.exit('No input files. Pass structure files or use --test-samples.')
     missing = [f for f in files if not Path(f).is_file()]
     if missing:
         sys.exit(f'File(s) not found: {missing}')
