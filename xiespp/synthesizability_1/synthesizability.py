@@ -79,8 +79,9 @@ def synthesizability_predictor(data, classifier='cae-mlp', verbose=1, use_multip
             from keras import layers
 
             lr = 0.0005
-            lr_decay = 0.002
-            opti = Adam(lr=lr, decay=lr_decay)
+            # The model is only used for inference; the training-time lr decay (0.002) is not needed
+            # (the `decay` argument was removed in Keras >= 2.11).
+            opti = Adam(learning_rate=lr)
 
             input_shape = (128, 128, 128, 3)
             auto_encoder = models.CAE(input_shape=input_shape, pool_size=[4, 4, 2], optimizer=opti,

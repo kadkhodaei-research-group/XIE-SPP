@@ -644,7 +644,7 @@ def replicate_in_box(
     # This is a guess to speed up the appending and can be exceeded if needed
     cd = np.sum((cell.max(axis=0) - cell.min(axis=0)) ** 2) ** 0.5  # Cell diagonal
     max_rep = int(np.prod(box.box_size + cd * 3) / cell.volume)
-    if pd.Series(filling).str.contains("reps|vacuum").bool():
+    if "reps" in filling or "vacuum" in filling:
         max_rep = 1
 
     cond = box.check_points_outside_of_box(positions)
@@ -660,7 +660,7 @@ def replicate_in_box(
     }
 
     df = pd.DataFrame([d_0] * max_rep)
-    if pd.Series(filling).str.contains("reps|vacuum").bool():
+    if "reps" in filling or "vacuum" in filling:
         df.loc[0, :] = [np.array(False).all(), ~cond.any(), cond.all()]
     else:
         df.loc[0, :] = [np.array(True).all(), ~cond.any(), cond.all()]

@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xiespp"
+dynamic = ["version"]
+description = "XIE-SPP: Crystal Image Encoder for Synthesis & Property Prediction"
+readme = "README.md"
+license = { text = "CC BY-NC-SA 4.0" }
+authors = [{ name = "Ali Davariashtiyani", email = "adavar2@uic.edu" }]
+keywords = ["synthesis", "synthesizability", "crystal", "formation energy"]
+# scipy 1.10 and tensorflow 2.15 limit the supported Python range.
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "ase>=3.21.1",
+    # The models are built/loaded with the Keras 2 API (h5 weights, workers=... in predict).
+    # Keras 3 (TF >= 2.16) is not supported.
+    "tensorflow>=2.12,<2.16",
+    "keras<3",
+    "numpy<2",
+    "pandas>=1.1.4,<3",
+    "tqdm",
+    "joblib",
+    "scipy==1.10.1",
+    # Required by the 1st version of the synthesizability predictor (synthesizability_1)
+    "scikit-learn",
+    "seaborn",
+    "bokeh",
+    "bokeh_sampledata",
+    # Interactive visualization of CVR images (xiespp.CVR.vv)
+    "plotly",
+]
+
+[project.optional-dependencies]
+# NVIDIA GPU support on Linux (CUDA libraries installed via pip)
+gpu = ["tensorflow[and-cuda]>=2.12,<2.16; sys_platform == 'linux'"]
+# Example notebooks, static figure export, Materials Project queries and PyMatGen inputs. Not needed for predictions.
+dev = [
+    "jupyterlab",
+    "ipykernel",
+    "ipywidgets",
+    "nbformat",
+    "kaleido",
+    "mp-api",
+    "pymatgen",
+]
+
+[project.urls]
+Homepage = "https://github.com/kadkhodaei-research-group/XIE-SPP"
+
+[project.scripts]
+xiespp = "xiespp.main:main"
+# Legacy names
+synthesizability = "xiespp.main:main_synthesizability"
+xiespp_synthesizability = "xiespp.main:main_synthesizability"
+xiespp_formation_energy = "xiespp.main:main_formation_energy"
+
+[tool.setuptools.dynamic]
+version = { attr = "xiespp._params.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["xiespp*"]
+
+[tool.setuptools.package-data]
+"xiespp.formation_energy" = ["model/*"]
+"xiespp.CVR" = ["periodic_table.csv"]
+"xiespp.synthesizability_1" = ["data/**/*.cif", "models/**/*.pkl", "models/**/*.h5", "models/**/*.csv"]
+"xiespp.synthesizability_2" = ["model/*"]

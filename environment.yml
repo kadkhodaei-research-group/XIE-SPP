@@ -1,0 +1,14 @@
+# Conda / mamba environment for XIE-SPP (includes everything needed for the example notebooks).
+#   mamba env create -f environment.yml    # or: conda env create -f environment.yml
+#   conda activate xiespp
+name: xiespp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # Core installation: everything needed for predictions (see pyproject.toml).
+      # For the example notebooks / visualization tools use `-e .[dev]` instead.
+      # For GPU support on Linux use `-e .[gpu]`.
+      - -e .
