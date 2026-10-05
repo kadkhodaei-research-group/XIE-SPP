@@ -9,6 +9,8 @@ import csv
 import datetime
 import json
 import os
+import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -20,8 +22,16 @@ def fetch(kind):
         f"https://api.github.com/repos/{os.environ['REPO']}/traffic/{kind}?per=day",
         headers={'Authorization': f"Bearer {os.environ['TOKEN']}", 'Accept': 'application/vnd.github+json'},
     )
-    with urllib.request.urlopen(request) as response:
-        return json.load(response)[kind]
+    try:
+        with urllib.request.urlopen(request) as response:
+            return json.load(response)[kind]
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403, 404):
+            sys.exit(f'::error::GitHub rejected the TRAFFIC_TOKEN secret (HTTP {e.code}). The token is invalid or '
+                     f'expired, or it has no read access to the administration data of {os.environ["REPO"]} '
+                     f'(fine-grained token: Administration -> Read-only; for organization repositories the '
+                     f'token may need to be approved by an owner).')
+        raise
 
 
 def update(kind, days, out_dir=Path('.')):
